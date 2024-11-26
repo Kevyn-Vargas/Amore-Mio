@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 62.5%;
+}
+
+/* Navbar fijo */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background: #00000000;
+  /*backdrop-filter: blur(10px);*/
+  z-index: 1000;
+}
+
+.container-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-otta-marca {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-btnes-navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Botón de menú (hamburguesa) */
+.menu-button {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  width: 30px;
+}
+
+.menu-button .bar {
+  height: 2px;
+  width: 80%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Menú desplegable */
+.menu {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  width: 200px;
+  display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.menu.hidden {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-item {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background 0.3s;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Botones de la derecha */
+.navbar-buttons .btn {
+  margin-left: 10px;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar-buttons .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.intro {
+  height: 100vh;
+  background-image: url("./assets/inicio.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+}
+
+.title-intro {
+  color: white;
+  width: 40%;
+  font-size: 3.8rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 500;
+}
+
+.title-marca {
+  color: white;
+}
+
+.container-title-marca {
+  margin-left: 10px;
+}
+
+.intro-menu-container {
+  height: 60vh;
+  /*background-image: url("./intro-menu.webp");
+  background-position-y: center;
+  opacity: 0.3;*/
+  background-color: white;
+}
+
+.intro-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.intro-vino {
+  display: flex;
+  flex-direction: column;
+  z-index: 2000;
+}
+
+.vector-vino {
+  width: 200px;
+}
+
+.subtitle-vino {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.intro-uvas {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 85%;
+}
+
+.vector-uvas {
+  width: 150px;
+}
+
+.container-btn-domicilio {
+  height: 50%;
+  display: flex;
+  align-items: end;
+}
+
+.btn-domicilio {
+  margin-top: 17vh;
+  margin-left: 10px;
+  padding: 8px 80px;
+  font-size: 14px;
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-domicilio:hover {
+  background-color: black;
+  color: white;
+}
+
+.bienvenida-al-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25vh;
+  background-color: #121930;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.pastas {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  background-color: white;
+  color: black;
+}
+
+.container-img {
+  margin-top: auto;
+  width: 50%;
+  height: max-content;
+  margin-top: 20vh;
+}
+
+.img-section-menu-opcionA {
+  width: 110%;
+  margin-left: -20px;
+  border-radius: 20px;
+}
+
+.img-section-menu-opcionB {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.container-detalle-menu {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.title-seccion-menu {
+  margin-top: 25px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  display: flex;
+  margin-left: 5vw;
+}
+
+hr {
+  margin-left: 5vw;
+}
+
+.detalle-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: max-content;
+  margin-top: 20px;
+}
+
+.titulo-precio-comida {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 6vw;
+  margin-top: 8px;
+}
+
+.puntito::before {
+  content: "•";
+}
+
+.descripcion-comida {
+  margin-left: 7vw;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+ul {
+  width: 80%;
+}
+
+.detalle-menu-col2 {
+  background-color: tomato;
+  width: 30%;
+  height: 10vh;
+}
+
+.m-extra {
+  margin-top: 60px;
+}
+
+@media (min-width: 480px) {
+  .hide-big-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-intro {
+    font-size: 3rem;
+  }
+
+  .intro-menu-container {
+    height: 45vh;
+  }
+
+  .vector-vino {
+    width: 150px;
+  }
+
+  .vector-uvas {
+    width: 100px;
+  }
+
+  .btn-domicilio {
+    padding: 8px 50px;
+  }
+
+  .bienvenida-al-menu {
+    font-size: 1.2rem;
+    height: 18vh;
+  }
+  .titulo-precio-comida {
+    font-size: 1.4rem;
+  }
+
+  .descripcion-comida {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro {
+    justify-content: center;
+  }
+
+  .title-intro {
+    width: 80%;
+  }
+
+  .container-btn-domicilio {
+    display: none;
+  }
+
+  .btn-domicilio {
+    padding: 8px 40px;
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 20vh;
+  }
+
+  .vector-vino {
+    width: 120px;
+    margin-left: 20px;
+  }
+
+  .vector-uvas {
+    display: none;
+  }
+
+  .subtitle-uvas {
+    display: none;
+  }
+
+  .bienvenida-al-menu {
+    font-size: 0.9rem;
+  }
+
+  .pastas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-seccion-menu {
+    align-self: flex-start;
+  }
+
+  .container-img {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-section-menu-opcionA {
+    width: 320px;
+    margin-left: auto;
+  }
+
+  .img-section-menu-opcionB {
+    width: 320px;
+  }
+  
+  .container-detalle-menu {
+    width: 100%;
+  }
+
+  .m-extra {
+    margin-top: 0;
+  }
+  .hide {
+    display: none;
+  }
+  
+  .y-title-seccion-menu {
+    width: 95%;
+    color: black;
+  }
+}
