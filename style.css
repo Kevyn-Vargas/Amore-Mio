@@ -233,12 +233,37 @@ body {
   font-size: 1.8rem;
 }
 
+.container-boceto {
+  display: none;
+}
+
+.type-of-food {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  background-color: white;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.desayunos {
+  width: 100%;
+  height: max-content;
+  background-color: white;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .pastas {
   width: 100%;
   height: max-content;
   display: flex;
   background-color: white;
   color: black;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .container-img {
@@ -246,6 +271,21 @@ body {
   width: 50%;
   height: max-content;
   margin-top: 20vh;
+}
+
+.container-img-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.container-img-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .img-section-menu-opcionA {
@@ -287,6 +327,34 @@ hr {
   margin-top: 20px;
 }
 
+.detalle-menu {
+  /*Orientacion Horizontal Screen Big and SmartPhone Vertical*/
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: max-content;
+  margin-top: 20px;
+}
+
+.detalle-menu-b {
+  /*Orientacion Horizontal Screen Big and SmartPhone*/
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: max-content;
+  margin-top: 20px;
+}
+
+.detalle-menu-c {
+  /*Orientacion Horizontal Screen Big and SmartPhone Vertical Invertida Imagen Abajo*/
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: max-content;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
 .titulo-precio-comida {
   font-family: "Baskervville", serif;
   font-weight: 400;
@@ -300,8 +368,33 @@ hr {
   margin-top: 8px;
 }
 
+.title-sabores {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 5vw;
+}
+
+.opciones-sabores {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 6vw;
+}
+
 .puntito::before {
   content: "•";
+}
+
+.star::before {
+  content: "»";
 }
 
 .descripcion-comida {
@@ -312,18 +405,94 @@ hr {
   font-size: 1.4rem;
 }
 
+.ravioles-sabores {
+  width: 16vw;
+}
+
+.ravioles-lista {
+  width: 39vw;
+}
+
 ul {
   width: 80%;
 }
 
-.detalle-menu-col2 {
-  background-color: tomato;
-  width: 30%;
-  height: 10vh;
-}
-
 .m-extra {
   margin-top: 60px;
+}
+
+.img-desayuno {
+  width: 45vw;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.img-cremas {
+  width: 45vw;
+  border-radius: 20px;
+}
+
+.img-ensaladas {
+  width: 35vw;
+  border-radius: 20px;
+}
+
+.img-ravioles {
+  width: 35vw;
+  border-radius: 20px;
+}
+
+.three-containers {
+  width: 33.3%;
+}
+
+.direction-over {
+  flex-direction: row-reverse;
+}
+
+.cincuenta {
+  width: 50%;
+}
+
+.cuarenta-y-cinco {
+  width: 45%;
+}
+
+.center {
+  justify-content: center;
+}
+
+.end {
+  align-self: end;
+}
+
+.flex {
+  display: flex;
+}
+
+.number {
+  counter-increment: list-counter;
+  position: relative;
+  padding-left: 30px;
+}
+
+.number-counter {
+  counter-reset: list-counter;
+}
+
+.number::before {
+  content: counter(list-counter) ". ";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.noventa {
+  width: 90%;
+}
+
+.cien {
+  width: 100%;
 }
 
 @media (min-width: 480px) {
@@ -364,6 +533,23 @@ ul {
   .descripcion-comida {
     font-size: 0.9rem;
   }
+
+  .detalle-menu-c {
+    align-items: center;
+  }
+
+  .three-containers {
+    width: 100%;
+  }
+
+  .img-ensaladas {
+    width: 50vw;
+  }
+
+  .column768 {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
@@ -403,9 +589,21 @@ ul {
     font-size: 0.9rem;
   }
 
+  .type-of-food {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   .pastas {
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .baguetas {
+    width: 85%;
   }
 
   .title-seccion-menu {
@@ -418,6 +616,10 @@ ul {
     justify-content: center;
   }
 
+  .container-img-c {
+    flex-wrap: wrap;
+  }
+
   .img-section-menu-opcionA {
     width: 320px;
     margin-left: auto;
@@ -426,9 +628,40 @@ ul {
   .img-section-menu-opcionB {
     width: 320px;
   }
-  
+
   .container-detalle-menu {
     width: 100%;
+  }
+
+  .container-img-b {
+    margin-left: 0;
+  }
+
+  .detalle-menu {
+    flex-direction: column;
+  }
+
+  .detalle-menu-c {
+    flex-direction: column-reverse;
+  }
+
+  .img-cremas {
+    width: 70 vw;
+  }
+
+  .img-ravioles {
+    width: 38vw;
+    border-radius: 20px;
+  }
+
+  .ravioles-sabores {
+    width: 50vw;
+  }
+
+  .ravioles-lista {
+    width: 75vw;
+    margin-top: 20px;
+    margin-left: -35px;
   }
 
   .m-extra {
@@ -437,9 +670,37 @@ ul {
   .hide {
     display: none;
   }
-  
+
   .y-title-seccion-menu {
     width: 95%;
     color: black;
+    align-self: baseline;
+  }
+
+  .container-boceto {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .boceto {
+    width: 130px;
+    height: 80px;
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .start {
+    justify-content: flex-start;
+  }
+
+  .cuarenta-y-cinco {
+    width: 90%;
+  }
+
+  .flex {
+    display: block;
   }
 }
