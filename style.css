@@ -21,7 +21,7 @@ body {
   height: 70px;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 45px 20px;
   background: rgba(0, 0, 0, 0); /* Fondo transparente */
   transition: background-color 0.3s ease-in-out; /* Suaviza el cambio de color */
   z-index: 1000;
@@ -154,10 +154,9 @@ body {
 }
 
 .logo-amore-mio {
-  width: 90px;
+  width: 80px;
   z-index: 99999;
   margin-left: 2vw;
-  margin-top: 3vh;
 }
 
 .intro {
