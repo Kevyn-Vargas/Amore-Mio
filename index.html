@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
         <div class="container-navbar">
           <div class="menu-otta-marca">
             <div class="menu-button" onclick="toggleMenu()">
@@ -17,16 +17,15 @@
               <span class="bar"></span>
             </div>
             <div class="container-title-marca">
-              <h3 class="title-marca">Amore Mio</h3>
+              <!-- <h3 class="title-marca">Amore Mio</h3> -->
+              <img
+                class="logo-amore-mio"
+                src="./assets/Logo Amore Mio.png"
+                alt=""
+              />
             </div>
           </div>
           <div class="container-btnes-navbar">
-            <div id="dropdown-menu" class="menu hidden">
-              <a href="#home" class="menu-item">Home</a>
-              <a href="#about" class="menu-item">About</a>
-              <a href="#services" class="menu-item">Services</a>
-              <a href="#contact" class="menu-item">Contact</a>
-            </div>
             <div class="navbar-buttons">
               <button class="btn">Domicilios</button>
               <button class="btn">Reservaciones</button>
@@ -34,6 +33,19 @@
           </div>
         </div>
       </nav>
+      <!-- Menú lateral -->
+      <div id="side-menu" class="side-menu hidden">
+        <div class="menu-content">
+          <h3 class="menu-title">Menú</h3>
+          <ul class="menu-list">
+            <li><a href="#carne" class="menu-item">🥩 Carne</a></li>
+            <li><a href="#pollo" class="menu-item">🍗 Pollo</a></li>
+            <li><a href="#pizzas" class="menu-item">🍕 Pizzas</a></li>
+            <li><a href="#pastas" class="menu-item">🍝 Pastas</a></li>
+          </ul>
+          <button class="close-button" onclick="toggleMenu()">Cerrar</button>
+        </div>
+      </div>
     </header>
     <section class="intro">
       <h1 class="title-intro">
@@ -72,6 +84,7 @@
         Saborea lo mejor de nuestra cocina con nuestro menú:
       </section>
       <section class="type-of-food">
+        <!--Entradas-->
         <div class="container-boceto">
           <h1 class="title-seccion-menu hide-big-screen">▸ Entradas</h1>
           <img class="boceto" src="./assets/boceto-entradas.png" alt="" />
@@ -128,6 +141,7 @@
         </div>
       </section>
       <section class="desayunos">
+        <!--Desayunos-->
         <div class="container-boceto">
           <h1 class="title-seccion-menu hide-big-screen">Desayunos</h1>
         </div>
@@ -154,6 +168,7 @@
         </div>
       </section>
       <section class="type-of-food">
+        <!--Cremas-->
         <div class="end">
           <h1 class="title-seccion-menu hide-big-screen direction-over">
             Cremas ⋰
@@ -186,6 +201,7 @@
         </div>
       </section>
       <section class="type-of-food">
+        <!-- Ensaladas-->
         <div class="container-boceto start">
           <h1 class="title-seccion-menu hide-big-screen center">Ensaladas</h1>
         </div>
@@ -240,6 +256,7 @@
         </div>
       </section>
       <section class="type-of-food">
+        <!-- Lasagnas-->
         <div class="container-boceto start">
           <h1 class="title-seccion-menu hide-big-screen">Lasagnas</h1>
         </div>
@@ -282,6 +299,7 @@
         </div>
       </section>
       <section class="type-of-food">
+        <!-- Ravioles-->
         <div class="container-boceto start">
           <h1 class="title-seccion-menu hide-big-screen center">Ravioles</h1>
         </div>
@@ -335,6 +353,7 @@
         </div>
       </section>
       <section class="pastas">
+        <!-- Pastas Parte 1-->
         <h1 class="title-seccion-menu hide-big-screen">Pastas</h1>
         <hr class="y-title-seccion-menu hide-big-screen" />
         <div class="container-img">
@@ -383,6 +402,7 @@
         </div>
       </section>
       <section class="pastas">
+        <!-- Pastas Parte 2-->
         <div class="container-detalle-menu">
           <div class="detalle-menu m-extra">
             <ul>
@@ -442,7 +462,7 @@
         <div>
           <h1 class="title-seccion-menu hide">Baguetas</h1>
           <hr />
-          <div class="detalle-menu-b">
+          <div class="detalle-menu-baguetas">
             <!-- <div class="cincuenta"> En caso de utilizar foto en esta seccion -->
             <ol class="number-counter">
               <li class="titulo-precio-comida">
@@ -508,6 +528,7 @@
         </div>
       </section>
       <section class="type-of-food">
+        <!-- Pescados -->
         <div class="container-boceto">
           <h1 class="title-seccion-menu hide-big-screen">Pescados</h1>
           <img class="boceto" src="./assets/fish.webp" alt="" />
@@ -516,39 +537,840 @@
           <h1 class="title-seccion-menu hide">Pescados</h1>
           <hr class="hide" />
           <div class="detalle-menu">
-              <ul class="noventa">
-                <li class="titulo-precio-comida">
-                  <p class="puntito">Salmón al Romero</p>
-                  <p>$20.000</p>
-                </li>
-                <p class="descripcion-comida">Salsa Blanca, Vino, Mandarina.</p>
-                <li class="titulo-precio-comida">
-                  <p class="puntito">Salmón al Balsámico</p>
-                  <p>$20.000</p>
-                </li>
-                <p class="descripcion-comida">
-                  Tomate Asado, Rúgula, Balsámico.
-                </p>
-                <li class="titulo-precio-comida">
-                  <p class="puntito">Mero Rey</p>
-                  <p>$20.000</p>
-                </li>
-                <p class="descripcion-comida">
-                  Tomillo, Langostinos, Vino Crema.
-                </p>
-                <li class="titulo-precio-comida">
-                  <p class="puntito">Robalo al Cartoccio</p>
-                  <p>$20.000</p>
-                </li>
-                <p class="descripcion-comida">
-                  Al horno, Verduras, 3 Salsas, & Queso.
-                </p>
-              </ul>
+            <ul class="noventa">
+              <li class="titulo-precio-comida">
+                <p class="puntito">Salmón al Romero</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Salsa Blanca, Vino, Mandarina.</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Salmón al Balsámico</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Tomate Asado, Rúgula, Balsámico.</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Mero Rey</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Tomillo, Langostinos, Vino Crema.
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Robalo al Cartoccio</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Al horno, Verduras, 3 Salsas, & Queso.
+              </p>
+            </ul>
           </div>
         </div>
       </section>
+      <section class="pastas">
+        <!-- Carnes -->
+        <h1 class="title-seccion-menu hide-big-screen">Carnes</h1>
+        <hr class="y-title-seccion-menu hide-big-screen" />
+        <div class="container-img">
+          <img
+            class="img-section-menu-opcionA"
+            src="./assets/pasta.webp"
+            alt=""
+          />
+        </div>
+        <div class="container-detalle-menu">
+          <h1 class="title-seccion-menu hide">Carnes</h1>
+          <hr class="hide" />
+          <div class="detalle-menu">
+            <ul>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Birra</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Champiñones, Tocineta, Crema</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Gratinado</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Napolitana, Mozzarella</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Al Vino</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Pimienta, Napolitana, Vino</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Lomo Amore Mio</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Salsa de Queso Azul</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">A la Plancha</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Lomo, Tomates, Champiñones Asados, & Reducción Balsámico
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Al Hojaldre</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Cocción Termino 1/2</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Lomo Mediterraneo</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Alcaparras, Aceitunas, Champiñon</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Costillas Reducción Balsámico</p>
+                <p>$20.000</p>
+              </li>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Rib Eye</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Sellado, Romero, Mantequilla, Anchoas
+              </p>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="pastas">
+        <!-- Pollo -->
+        <h1 class="title-seccion-menu hide-big-screen">Pollo</h1>
+        <hr class="y-title-seccion-menu hide-big-screen" />
+        <div class="container-detalle-menu">
+          <h1 class="title-seccion-menu hide">Pollo</h1>
+          <hr class="hide" />
+          <div class="detalle-menu">
+            <ul>
+              <li class="titulo-precio-comida">
+                <p class="puntito">En Salsas Especiales</p>
+                <p>$20.000</p>
+              </li>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Gratinado</p>
+                <p>$20.000</p>
+              </li>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Birra</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Champiñon, Tocineta, Crema</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Al Horno</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Espinaca & Mozzarella</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">A la Plancha</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Vegetales Asados</p>
+            </ul>
+          </div>
+        </div>
+        <div class="container-img">
+          <img
+            class="img-section-menu-opcionB"
+            src="./assets/pasta.webp"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="desayunos baguetas">
+        <!-- Sandwiches -->
+        <div class="container-boceto">
+          <h1 class="title-seccion-menu hide-big-screen">Sandwiches</h1>
+        </div>
+        <div>
+          <h1 class="title-seccion-menu hide">Sandwiches</h1>
+          <hr />
+          <div class="detalle-menu-b">
+            <!-- <div class="cincuenta"> En caso de utilizar foto en esta seccion -->
+            <ol class="noventa">
+              <li class="titulo-precio-comida">
+                <p class="">Italianisimo</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Prosciutto, Salami, Aceitunas, Jamon, Queso & Pesto
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="">Amore Mio</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Pollo, Champiñon, Mozzarella & Pesto
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="">Clásico</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">Jamón & Queso</p>
+              <li class="titulo-precio-comida">
+                <p class="">Capresse</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Tomate, Albahaca, Mozzarella & Pesto
+              </p>
+            </ol>
+            <!-- </div> -->
+            <!-- <div class="cincuenta">
+              <img class="img-desayuno" src="./assets/pasta.webp" alt="" />
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="pastas">
+        <!-- Pizzas Parte 1-->
+        <h1 class="title-seccion-menu hide-big-screen">Pizzas</h1>
+        <hr class="y-title-seccion-menu hide-big-screen" />
+        <div class="container-img-pizza-a">
+          <img
+            class="img-section-menu-opcionA"
+            src="./assets/pasta.webp"
+            alt=""
+          />
+        </div>
+        <div class="container-detalle-menu-60">
+          <h1 class="title-seccion-menu hide">Pizzas</h1>
+          <hr class="hide" />
+          <div class="detalle-menu">
+            <ul class="noventa">
+              <li class="titulo-precio-comida">
+                <p class="cuarenta-cinco"><b>Sabores</b></p>
+                <p class="porciones-pizza-small veinte">
+                  <span class="porciones-pizza-big">Personal</span><br />4
+                  porciones
+                </p>
+                <p class="porciones-pizza-small veinte">
+                  <span class="porciones-pizza-big">Mediana</span><br />6
+                  porciones
+                </p>
+              </li>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">Napolitana</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">Mozzarella, Albahaca, Tomate</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">Amici</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Prosciutto, Salami, Jamon, Mozzarella
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">Capresse</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Tomate, Mozzarella, Albahaca, Pesto
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">A la Huerta</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Aceitunas, Espinaca, Champiñon, Cebolla, Pimentón Asado &
+                Albahaca
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">A la Plancha</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Lomo, Tomates, Champiñones Asados
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">Primavera</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Atún, Tomate, Albahaca, Mozzarella
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">Pollo & Champiñon</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="pastas">
+        <!-- Pizzas Parte 2-->
+        <div class="container-detalle-menu-60">
+          <div class="detalle-menu cero-margin-smartphone">
+            <ul class="noventa">
+              <li class="titulo-precio-comida hide">
+                <p class="cuarenta-cinco"><b></b></p>
+                <p class="porciones-pizza-small veinte">
+                  <span class="porciones-pizza-big">Personal</span><br />4
+                  porciones
+                </p>
+                <p class="porciones-pizza-small veinte">
+                  <span class="porciones-pizza-big">Mediana</span><br />6
+                  porciones
+                </p>
+              </li>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">Ana Maria</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Manzana Verde, Camembert, Albahaca, Mozzarella & Jamon
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">Marinera</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">4 Quesos</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">4 Estaciones</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Alcachofas, Aceitunas, Champiñon, Cebolla
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">Amore Mio</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Prosciutto, Mozzarella, Bufala, Tomate, Rugula, Albahaca
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">Dolce Vitta</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">Melocotón, Jamon & Ciruelas</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">Bambino</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">Piña, Jamon & Peperoni</p>
+              <li class="titulo-precio-comida">
+                <p class="puntito cuarenta-cinco">Di Parma</p>
+                <p class="veinte">$20.000</p>
+                <p class="veinte">$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Parmesano, Prosciutto, Alcachofa, Albahaca, Aceitunas & Pesto
+              </p>
+            </ul>
+          </div>
+        </div>
+        <div class="container-img-pizza-b">
+          <img
+            class="img-section-menu-opcionB"
+            src="./assets/pasta.webp"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="type-of-food">
+        <!-- Postres-->
+        <div class="container-boceto start">
+          <h1 class="title-seccion-menu hide-big-screen center">Postres</h1>
+        </div>
+        <div>
+          <h1 class="title-seccion-menu hide center"><b>Postres</b></h1>
+          <hr />
+          <div class="detalle-menu-b noventa-phone column">
+            <div>
+              <div class="container-postres">
+                <ol class="postres-sabores">
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Red Velvet</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Amor Perfecto</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Pasón Caramelo</p>
+                  </li>
+                  <li class="opciones-sabores postres-margins">
+                    <p class="star">Pie de Limón</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Zanahoria</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Cheese Cake Frutos Rojos</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Queso de Coco</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Flan de Arequipe</p>
+                  </li>
+                </ol>
+                <ol class="postres-sabores">
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Guayaba y Arequipe</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Chocolate Belga</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Guanábana</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Tres Leches - Maracuyá</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Baileys & Cafe</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">Chocolate Avellana</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin">
+                    <p class="star">
+                      Coco Azul
+                      <span class="descripcion-mini">(Limón - Coco)</span>
+                    </p>
+                  </li>
+                  <li class="opciones-sabores">
+                    <p class="star descripcion-medium">
+                      Helado + Postre <b class="descripcion-mini-2">$12.500</b>
+                    </p>
+                  </li>
+                </ol>
+                <ol class="postres-sabores container-helados">
+                  <h3 class="title-sabores m-extra-phone">Helados</h3>
+                  <li class="opciones-sabores postres-margin helados">
+                    <p class="star sesenta-phone">Porcion de Helado</p>
+                    <p class="veinte-phone">$4.500</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin helados">
+                    <p class="star sesenta-phone">Helado Macadamia</p>
+                    <p class="veinte-phone">$6.000</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin helados">
+                    <p class="star">Copa Helado (Dos Porciones)</p>
+                    <p class="veinte-phone">$7.500</p>
+                  </li>
+                  <li class="opciones-sabores postres-margins helados">
+                    <p class="star sesenta-phone">Copa Lychess</p>
+                    <p class="veinte-phone">$12.000</p>
+                  </li>
+                  <p class="descripcion-comida descripcion-helados-phone">
+                    Melocotón, Maracuyá, Lychee & Limón
+                  </p>
+                  <li class="opciones-sabores postres-margin helados">
+                    <p class="star sesenta-phone">Copa Amore Mio</p>
+                    <p class="veinte-phone">$12.500</p>
+                  </li>
+                  <p class="descripcion-comida descripcion-helados-phone">
+                    Vainilla, Mora & Arandanos
+                  </p>
+                </ol>
+                <ol class="postres-sabores container-helados">
+                  <h3 class="title-sabores m-extra-phone">Sin Gluten</h3>
+                  <li class="opciones-sabores postres-margin helados">
+                    <p class="star sesenta-phone">Chocolate Belga</p>
+                    <p class="veinte-phone">$4.500</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin helados">
+                    <p class="star sesenta-phone">Zanahoria</p>
+                    <p class="veinte-phone">$6.000</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!--Bebidas-->
+        <h1 class="title-seccion-menu center"><b>Bebidas</b></h1>
+        <section class="type-of-food">
+          <!--Calientes-->
+          <div>
+            <h1 class="title-seccion-menu hide-big-screen">Calientes</h1>
+          </div>
+          <div class="cien">
+            <h1 class="title-seccion-menu hide">Calientes</h1>
+            <hr />
+            <div>
+              <ul class="noventa">
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Americano Oscuro</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Americano Suave</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Campesino</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Americano Doble</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Latte</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Capuccino</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Affogato Expresso + Helado</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Expresso Corto</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Expresso Doble</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Copa de Vino Caliente</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Americano Suave</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Americano Oscuro</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Chocolate</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Milo</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Aromatica de Frutas</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Aromatica de Hierbas</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Té en agua</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Té en leche</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Canelazo</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Carajillo</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Té chai</p>
+                  <p>$20.000</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="type-of-food">
+          <!--Frias-->
+          <div class="end">
+            <h1 class="title-seccion-menu hide-big-screen direction-over">
+              Frias ⁂
+            </h1>
+          </div>
+          <div class="cien">
+            <h1 class="title-seccion-menu hide direction-over">Frias ⁂</h1>
+            <hr />
+            <div>
+              <ul class="noventa">
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Milo Frio</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Gaseosa</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Cerveza Nacional</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Cerveza Importada</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Micheladas</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Malteadas</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Malteada</p>
+                  <p>$20.000</p>
+                </li>
+                <p class="descripcion-comida">Vainilla - Baileys - Macadamia</p>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Granizado de Fruta</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Granizado de Café</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Vino de Verano</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Capuccino</p>
+                  <p>$20.000</p>
+                </li>
+                <p class="descripcion-comida">Leche de Almendras</p>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Latte Frio</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Limonada Cerezada</p>
+                  <p>$20.000</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="type-of-food">
+          <!--Jugos-->
+          <div>
+            <h1 class="title-seccion-menu hide-big-screen">Jugos</h1>
+          </div>
+          <div class="cien">
+            <h1 class="title-seccion-menu hide">Jugos</h1>
+            <hr />
+            <div>
+              <ul class="noventa">
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Jugo en agua</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Jugo en leche</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Mandarina</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Naranja</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Limonada de Coco</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Limonada Natural</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Limonada Yerbabuena</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Botella de Agua</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Zumo de Limón</p>
+                  <p>$20.000</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="type-of-food">
+          <!--Sodas-->
+          <div class="end">
+            <h1 class="title-seccion-menu hide-big-screen direction-over">
+              Sodas
+            </h1>
+          </div>
+          <div class="cien">
+            <h1 class="title-seccion-menu hide direction-over">Sodas</h1>
+            <hr />
+            <div>
+              <ul class="noventa">
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Frutos Rojos</p>
+                  <p>$20.000</p>
+                </li>
+                <p class="descripcion-comida">(con licor de Cereza)</p>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Amore Mio</p>
+                  <p>$20.000</p>
+                </li>
+                <p class="descripcion-comida">(Maracuyá, Lychee, & Limón)</p>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Zuppa Frutos del Mar</p>
+                  <p>$20.000</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="type-of-food">
+          <!--Shots-->
+          <div>
+            <h1 class="title-seccion-menu hide-big-screen">Shots</h1>
+          </div>
+          <div class="cien">
+            <h1 class="title-seccion-menu hide">Shots</h1>
+            <hr />
+            <div>
+              <ul class="noventa">
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Whisky</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Baileys</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Copa de Baileys</p>
+                  <p>$20.000</p>
+                </li>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Copa de Vino</p>
+                  <p>$20.000</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="type-of-food">
+          <!--Vino-->
+          <div class="container-boceto start">
+            <h1 class="title-seccion-menu hide-big-screen center">Vino</h1>
+          </div>
+          <div class="cien">
+            <h1 class="title-seccion-menu hide center">Vino</h1>
+            <hr />
+            <div class="detalle-menu-b column-vino">
+              <div class="three-containers-vino">
+                <ul>
+                  <li class="titulo-precio-comida">
+                    <p class="puntito">Jovén de la casa</p>
+                    <p>$20.000</p>
+                  </li>
+                  <li class="titulo-precio-comida">
+                    <p class="puntito">Denominación Origen</p>
+                    <p>$20.000</p>
+                  </li>
+                  <p class="descripcion-comida">
+                    (Italiano - Francés - Español)
+                  </p>
+                  <li class="titulo-precio-comida">
+                    <p class="puntito">Gran Reserva</p>
+                    <p>$20.000</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="container-img-b three-containers-vino vino-container">
+                <img class="img-vino" src="./assets/barril-vino.png" alt="" />
+              </div>
+              <div class="three-containers-vino">
+                <ul>
+                  <li class="titulo-precio-comida">
+                    <p class="puntito">Piccolo</p>
+                    <p>$20.000</p>
+                  </li>
+                  <li class="titulo-precio-comida">
+                    <p class="puntito">Media Botella</p>
+                    <p>$20.000</p>
+                  </li>
+                  <li class="titulo-precio-comida">
+                    <p class="puntito">Gran Reserva Seielion</p>
+                    <p>$20.000</p>
+                  </li>
+                  <p class="descripcion-comida">
+                    (Italiano - Francés - Español)
+                  </p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </main>
-    <footer>Wenas sumerce este es el footer</footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Reservaciones y Domicilios -->
+        <div class="footer-section">
+          <h3 class="footer-title">Reservaciones & Domicilios</h3>
+          <p>Llama al: <a href="tel:+1234567890">+1 234 567 890</a></p>
+          <p>Horario: Lunes a Domingo, 9:00 AM - 10:00 PM</p>
+        </div>
+        <!-- Redes Sociales -->
+        <div class="footer-section">
+          <h3 class="footer-title">Síguenos</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook" class="social-icon">🌐</a>
+            <a href="#" aria-label="Instagram" class="social-icon">📸</a>
+            <a href="#" aria-label="WhatsApp" class="social-icon">📞</a>
+          </div>
+        </div>
+
+        <!-- Ubicación -->
+        <div class="footer-section">
+          <h3 class="footer-title">Encuéntranos</h3>
+          <p>📍 Villa de Leyva, Boyaca.</p>
+          <p>
+            <a href="https://www.google.com/maps" target="_blank"
+              >Ver en Google Maps</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Amore Mio. Todos los derechos reservados.</p>
+        <!-- <p>Desarrollado con ❤️ por <a href="#">Tu Nombre</a></p> -->
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>

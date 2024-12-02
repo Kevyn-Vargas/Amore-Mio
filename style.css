@@ -12,7 +12,7 @@ body {
   font-size: 62.5%;
 }
 
-/* Navbar fijo */
+/* Navbar fija */
 .navbar {
   position: fixed;
   top: 0;
@@ -22,28 +22,40 @@ body {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  background: #00000000;
-  /*backdrop-filter: blur(10px);*/
+  background: rgba(0, 0, 0, 0); /* Fondo transparente */
+  transition: background-color 0.3s ease-in-out; /* Suaviza el cambio de color */
   z-index: 1000;
 }
 
+.navbar.scrolled {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Fondo oscuro semi-transparente al hacer scroll */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Contenido responsivo */
 .container-navbar {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .menu-otta-marca {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
-.container-btnes-navbar {
-  display: flex;
-  flex-direction: row;
+.container-title-marca h3 {
+  margin-left: 10px;
+  color: white;
 }
 
-/* Botón de menú (hamburguesa) */
+/* Botón de menú */
 .menu-button {
   cursor: pointer;
   display: flex;
@@ -61,42 +73,7 @@ body {
   transition: all 0.3s;
 }
 
-/* Menú desplegable */
-.menu {
-  position: absolute;
-  top: 60px;
-  left: 20px;
-  width: 200px;
-  display: inline-block;
-  flex-direction: row;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.9);
-  border-radius: 5px;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-  z-index: 999;
-}
-
-.menu.hidden {
-  max-height: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.menu-item {
-  display: block;
-  padding: 10px 15px;
-  color: white;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  transition: background 0.3s;
-}
-
-.menu-item:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-/* Botones de la derecha */
+/* Botones de navegación */
 .navbar-buttons .btn {
   margin-left: 10px;
   padding: 8px 15px;
@@ -112,6 +89,74 @@ body {
 .navbar-buttons .btn:hover {
   background-color: white;
   color: black;
+}
+
+/* Menú lateral */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); /* Fondo oscuro con opacidad */
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+  padding: 20px;
+}
+
+.side-menu.open {
+  left: 0; /* Desliza el menú desde el lado izquierdo */
+}
+
+.menu-content {
+  color: white;
+}
+
+.menu-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  margin-top: 65px;
+  justify-self: center;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  display: block;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.menu-item:hover {
+  color: #ff9800; /* Color de hover */
+}
+
+/* Botón de cierre */
+.close-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.close-button:hover {
+  background: #ff5151;
+}
+
+.logo-amore-mio {
+  width: 70px;
+  z-index: 99999;
+  margin-left: 3vw;
 }
 
 .intro {
@@ -171,7 +216,7 @@ body {
 .intro-vino {
   display: flex;
   flex-direction: column;
-  z-index: 2000;
+  z-index: 500;
 }
 
 .vector-vino {
@@ -185,6 +230,13 @@ body {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.subtitle-uvas {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px;
 }
 
 .intro-uvas {
@@ -215,6 +267,9 @@ body {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .btn-domicilio:hover {
@@ -238,7 +293,7 @@ body {
 }
 
 .type-of-food {
-  width: 100%;
+  width: 97%;
   height: max-content;
   display: flex;
   background-color: white;
@@ -257,7 +312,7 @@ body {
 }
 
 .pastas {
-  width: 100%;
+  width: 98%;
   height: max-content;
   display: flex;
   background-color: white;
@@ -288,8 +343,22 @@ body {
   margin-bottom: 20px;
 }
 
+.container-img-pizza-a {
+  margin-top: auto;
+  width: 40%;
+  height: max-content;
+  margin-top: 20vh;
+}
+
+.container-img-pizza-b {
+  margin-top: auto;
+  width: 40%;
+  height: max-content;
+  margin-top: 20vh;
+}
+
 .img-section-menu-opcionA {
-  width: 110%;
+  width: 100%;
   margin-left: -20px;
   border-radius: 20px;
 }
@@ -305,6 +374,12 @@ body {
   width: 50%;
 }
 
+.container-detalle-menu-60 {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
 .title-seccion-menu {
   margin-top: 25px;
   font-family: "Libre Baskerville", serif;
@@ -316,7 +391,8 @@ body {
 }
 
 hr {
-  margin-left: 5vw;
+  margin-left: 3vw;
+  margin-top: 8px;
 }
 
 .detalle-menu {
@@ -340,7 +416,16 @@ hr {
   /*Orientacion Horizontal Screen Big and SmartPhone*/
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 98%;
+  height: max-content;
+  margin-top: 20px;
+}
+
+.detalle-menu-baguetas {
+  /*Orientacion Horizontal Screen Big and SmartPhone*/
+  display: flex;
+  flex-direction: row;
+  width: 90%;
   height: max-content;
   margin-top: 20px;
 }
@@ -349,7 +434,7 @@ hr {
   /*Orientacion Horizontal Screen Big and SmartPhone Vertical Invertida Imagen Abajo*/
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 95%;
   height: max-content;
   margin-top: 20px;
   align-items: flex-start;
@@ -364,7 +449,7 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  margin-left: 6vw;
+  margin-left: 3vw;
   margin-top: 8px;
 }
 
@@ -372,7 +457,7 @@ hr {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 2rem;
   display: flex;
   margin-bottom: 10px;
   margin-left: 5vw;
@@ -382,11 +467,16 @@ hr {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: row;
   width: 100%;
-  margin-left: 6vw;
+}
+
+.container-postres {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .puntito::before {
@@ -398,7 +488,7 @@ hr {
 }
 
 .descripcion-comida {
-  margin-left: 7vw;
+  margin-left: 5vw;
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
@@ -446,12 +536,20 @@ ul {
   width: 33.3%;
 }
 
+.three-containers-vino {
+  width: 100%;
+}
+
 .direction-over {
   flex-direction: row-reverse;
 }
 
 .cincuenta {
   width: 50%;
+}
+
+.cuarenta {
+  width: 40%;
 }
 
 .cuarenta-y-cinco {
@@ -495,13 +593,167 @@ ul {
   width: 100%;
 }
 
+.veinte {
+  width: 30%;
+}
+
+.cuarenta-cinco {
+  width: 45%;
+}
+
+.porciones-pizza-small {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.porciones-pizza-big {
+  font-size: 1.1rem;
+}
+
+.postres-sabores {
+  width: 35%;
+  margin-left: 12vw;
+}
+
+.container-helados {
+  margin-top: 25px;
+}
+
+.container-vino {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.img-vino {
+  width: 10vw;
+}
+
+/* Footer General */
+.footer {
+  background: #1a1a1a;
+  color: #f5f5f5;
+  padding: 30px 20px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+/* Contenedor principal del footer */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para cada sección del footer */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ff3434;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section a {
+  color: #ff8f8f;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* Redes Sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ff0000;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+  color: #ff5151;
+  transform: scale(1.2);
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+}
+
+.footer-bottom a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
 @media (min-width: 480px) {
   .hide-big-screen {
     display: none;
   }
 }
 
+@media (min-width: 768px) {
+  .vino-container {
+    width: 10%;
+  }
+}
+
 @media (max-width: 768px) {
+  /* Ocultar botones en pantallas pequeñas */
+  .navbar-buttons {
+    display: none;
+  }
+
+  /* Menú desplegable ocupa toda la pantalla */
+  .menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .menu-item {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
   .title-intro {
     font-size: 3rem;
   }
@@ -534,12 +786,24 @@ ul {
     font-size: 0.9rem;
   }
 
+  .opciones-sabores {
+    font-size: 1.4rem;
+  }
+
   .detalle-menu-c {
     align-items: center;
   }
 
   .three-containers {
     width: 100%;
+  }
+
+  .three-containers-vino {
+    width: 40%;
+  }
+
+  .img-vino {
+    width: 15vw;
   }
 
   .img-ensaladas {
@@ -549,6 +813,14 @@ ul {
   .column768 {
     display: flex;
     flex-direction: column;
+  }
+
+  .postres-sabores {
+    margin-left: 9vw;
+  }
+
+  .vino-container {
+    width: 10%;
   }
 }
 
@@ -614,6 +886,20 @@ ul {
     margin-top: 6vh;
     display: flex;
     justify-content: center;
+  }
+
+  .container-img-pizza-a {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .container-img-pizza-b {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
   }
 
   .container-img-c {
@@ -702,5 +988,103 @@ ul {
 
   .flex {
     display: block;
+  }
+
+  .cero-margin-smartphone {
+    margin: 0;
+  }
+
+  .postres-sabores {
+    width: 44vw;
+    margin-left: 0;
+  }
+
+  .postres-margin {
+    margin-top: 10px;
+    display: flex;
+  }
+
+  .descripcion-mini {
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+
+  .descripcion-mini-2 {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .descripcion-medium {
+    font-size: 1rem;
+  }
+
+  .noventa-phone {
+    width: 90%;
+  }
+
+  .flex-phone {
+    display: flex;
+  }
+
+  .opciones-sabores {
+    margin-left: 6vw;
+  }
+
+  .container-helados {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .helados {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+  }
+
+  .m-extra-phone {
+    margin-top: 20px;
+  }
+
+  .sesenta-phone {
+    width: 60%;
+  }
+
+  .descripcion-helados-phone {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .cincuenta-phone {
+    width: 50%;
+  }
+
+  .container-detalle-menu-60 {
+    width: 100%;
+  }
+
+  .container-img-pizza-b {
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+  .three-containers-vino {
+    width: 100%;
+  }
+
+  .column-vino {
+    flex-direction: column;
+  }
+
+  .img-vino {
+    width: 25vw;
+  }
+
+  .veinte-phone {
+    width: 20%;
   }
 }

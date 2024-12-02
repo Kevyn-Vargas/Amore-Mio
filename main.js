@@ -1,30 +1,31 @@
 // script.js
 
-let isMenuOpen = false;
-
 function toggleMenu() {
-  const menu = document.getElementById("dropdown-menu");
-
-  if (menu.classList.contains("hidden")) {
-    menu.classList.remove("hidden");
-    isMenuOpen = true;
-  } else {
-    menu.classList.add("hidden");
-    isMenuOpen = false;
-  }
+  const sideMenu = document.getElementById('side-menu');
+  sideMenu.classList.toggle('open');
+  sideMenu.classList.toggle('hidden');
 }
 
-document.addEventListener("click", (event) => {
-  const menu = document.getElementById("dropdown-menu");
-  const menuButton = document.querySelector(".menu-button");
+// Cerrar el menú si se hace clic fuera de él
+window.addEventListener('click', (event) => {
+  const sideMenu = document.getElementById('side-menu');
+  const menuButton = document.querySelector('.menu-button');
 
   if (
-    isMenuOpen &&
-    !menu.contains(event.target) &&
-    !menuButton.contains(event.target)
+    !sideMenu.contains(event.target) && // Si el clic no es dentro del menú
+    !menuButton.contains(event.target) && // Y no es en el botón
+    sideMenu.classList.contains('open') // Y el menú está abierto
   ) {
-    toggleMenu()
-    menu.classList.add("hidden");
-    isMenuOpen = false;
+    toggleMenu();
+  }
+});
+
+// Cambiar fondo al hacer scroll
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
   }
 });
