@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
+html {
+  scroll-behavior: smooth; /* Scroll suave para toda la página */
+}
+
 /* Reset básico */
 * {
   margin: 0;
@@ -71,6 +75,7 @@ body {
   background-color: white;
   border-radius: 2px;
   transition: all 0.3s;
+  z-index: 9999;
 }
 
 /* Botones de navegación */
@@ -98,11 +103,46 @@ body {
   left: -100%;
   width: 250px;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9); /* Fondo oscuro con opacidad */
+  background: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
   transition: left 0.3s ease-in-out;
-  z-index: 999;
+  z-index: 1000;
   padding: 20px;
+  overflow-y: auto; /* Scroll interno */
+  scrollbar-width: thin; /* Scroll delgado */
+  scrollbar-color: #ff5151 rgba(255, 255, 255, 0.1);
+  scroll-behavior: smooth; /* Scroll animado */
 }
+
+/* Estilo adicional para scroll en navegadores modernos */
+.side-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.side-menu::-webkit-scrollbar-thumb {
+  background-color: #ff5151;
+  border-radius: 5px;
+}
+
+.side-menu::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Anima los elementos del menú al hacer scroll */
+.menu-item {
+  display: block;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateX(10px); /* Desliza un poco al pasar el mouse */
+  color: #ff5151; /* Color de hover */
+}
+
 
 .side-menu.open {
   left: 0; /* Desliza el menú desde el lado izquierdo */
@@ -122,19 +162,6 @@ body {
 .menu-list {
   list-style: none;
   padding: 0;
-}
-
-.menu-item {
-  display: block;
-  font-size: 1.2rem;
-  margin: 10px 0;
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s;
-}
-
-.menu-item:hover {
-  color: #ff5151; /* Color de hover */
 }
 
 /* Botón de cierre */
@@ -174,7 +201,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: black;
   opacity: 0.5;
   mix-blend-mode: multiply;
@@ -198,10 +225,7 @@ body {
 }
 
 .intro-menu-container {
-  height: 60vh;
-  /*background-image: url("./intro-menu.webp");
-  background-position-y: center;
-  opacity: 0.3;*/
+  height: 300px;
   background-color: white;
 }
 
@@ -366,6 +390,12 @@ body {
   border-radius: 20px;
 }
 
+.img-section-menu-pastas {
+  width: 100%;
+  margin-left: -20px;
+  border-radius: 20px;
+}
+
 .img-section-menu-opcionB {
   width: 100%;
   border-radius: 20px;
@@ -391,6 +421,20 @@ body {
   font-size: 2rem;
   display: flex;
   margin-left: 5vw;
+}
+
+.container-ciabatta {
+  display: flex;
+  flex-direction: column;
+}
+
+.ciabatta {
+  margin-left: 8vw;
+  margin-top: 15px;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
 }
 
 hr {
@@ -443,7 +487,28 @@ hr {
   align-items: flex-start;
 }
 
+.detalle-menu-adiciones {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: max-content;
+  margin: auto;
+}
+
 .titulo-precio-comida {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 3vw;
+  margin-top: 8px;
+}
+
+.titulo-precio-adiciones {
   font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
@@ -499,7 +564,8 @@ hr {
 }
 
 .ravioles-sabores {
-  width: 16vw;
+  width: 20vw;
+  margin-left: 15px;
 }
 
 .ravioles-lista {
@@ -712,18 +778,6 @@ ul {
   text-decoration: underline;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-section {
-    text-align: center;
-  }
-}
-
 @media (min-width: 480px) {
   .hide-big-screen {
     display: none;
@@ -785,6 +839,14 @@ ul {
     font-size: 1.4rem;
   }
 
+  .titulo-precio-adiciones {
+    font-size: 1.4rem;
+  }
+
+  .ciabatta {
+    font-size: 0.9rem;
+  }
+
   .descripcion-comida {
     font-size: 0.9rem;
   }
@@ -816,6 +878,7 @@ ul {
   .column768 {
     display: flex;
     flex-direction: column;
+    justify-self: flex-end;
   }
 
   .postres-sabores {
@@ -824,6 +887,15 @@ ul {
 
   .vino-container {
     width: 10%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
   }
 }
 
@@ -910,6 +982,12 @@ ul {
   }
 
   .img-section-menu-opcionA {
+    width: 320px;
+    height: 60vh;
+    margin-left: auto;
+  }
+
+  .img-section-menu-pastas {
     width: 320px;
     margin-left: auto;
   }
@@ -1089,5 +1167,14 @@ ul {
 
   .veinte-phone {
     width: 20%;
+  }
+
+  .detalle-menu-adiciones {
+    width: auto;
+    justify-content: center;
+  }
+
+  .titulo-precio-adiciones {
+    font-size: 1.2rem;
   }
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>Amore Mio</title>
   </head>
@@ -38,12 +39,28 @@
         <div class="menu-content">
           <h3 class="menu-title">Menú</h3>
           <ul class="menu-list">
-            <li><a href="#carne" class="menu-item">🥩 Carne</a></li>
-            <li><a href="#pollo" class="menu-item">🍗 Pollo</a></li>
-            <li><a href="#pizzas" class="menu-item">🍕 Pizzas</a></li>
+            <li><a href="#entradas" class="menu-item">🥗 Entradas</a></li>
+            <li><a href="#desayunos" class="menu-item">🍳 Desayunos</a></li>
+            <li><a href="#cremas" class="menu-item">🥣 Cremas</a></li>
+            <li><a href="#ensaladas" class="menu-item">🥗 Ensaladas</a></li>
+            <li><a href="#adiciones" class="menu-item">🍟 Adiciones</a></li>
+            <li><a href="#lasagnas" class="menu-item">🍲 Lasagnas</a></li>
+            <li><a href="#ravioles" class="menu-item">🍝 Ravioles</a></li>
             <li><a href="#pastas" class="menu-item">🍝 Pastas</a></li>
+            <li><a href="#baguetas" class="menu-item">🥖 Baguetas</a></li>
+            <li><a href="#risottos" class="menu-item">🍚 Risottos</a></li>
+            <li><a href="#pescados" class="menu-item">🐟 Pescados</a></li>
+            <li><a href="#carnes" class="menu-item">🥩 Carnes</a></li>
+            <li><a href="#pollo" class="menu-item">🍗 Pollo</a></li>
+            <li><a href="#sandwiches" class="menu-item">🥪 Sándwiches</a></li>
+            <li><a href="#pizzas" class="menu-item">🍕 Pizzas</a></li>
+            <li><a href="#postres" class="menu-item">🍰 Postres</a></li>
+            <li><a href="#helados" class="menu-item">🍦 Helados</a></li>
+            <li><a href="#bebidas" class="menu-item">🥤 Bebidas</a></li>
+            <li><a href="#vinos" class="menu-item">🍷 Vinos</a></li>
           </ul>
           <button class="close-button" onclick="toggleMenu()">Cerrar</button>
+          
         </div>
       </div>
     </header>
@@ -103,27 +120,42 @@
                   <p class="puntito">Champiñones Napolitanos</p>
                   <p>$20.000</p>
                 </li>
-                <li class="titulo-precio-comida">
-                  <p class="puntito">Antipasto Mixto</p>
-                  <p>$20.000</p>
-                </li>
                 <p class="descripcion-comida">
                   Carnes Maduras, Quesos Madurados, Berenjenas, Pimentón &
                   Aceitunas
                 </p>
                 <li class="titulo-precio-comida">
-                  <p class="puntito">Burrata</p>
-                  <p>$20.000</p>
+                  <p class="puntito">Ciabatta</p>
+                  <p>$17.000</p>
                 </li>
+                <ol class="container-ciabatta">
+                  <li class="ciabatta">
+                    Prosciutto, Mozzarella, Albahaca, Pesto
+                  </li>
+                  <li class="ciabatta">
+                    Quesos Maduros, Champiñones, Parmesano, Pesto
+                  </li>
+                  <li class="ciabatta">
+                    Berenjenas, Albahaca, Tomate, Pimentones, Asados
+                  </li>
+                </ol>
               </ul>
             </div>
             <div>
               <ul>
                 <li class="titulo-precio-comida">
+                  <p class="puntito">Antipasto Mixto</p>
+                  <p>$38.000</p>
+                </li>
+                <li class="titulo-precio-comida">
                   <p class="puntito">Quiche, Sabores Variados</p>
-                  <p>$20.000</p>
+                  <p>$13.000</p>
                 </li>
                 <p class="descripcion-comida">Vegetales, Pollo y Champiñones</p>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Quiche Salmón</p>
+                  <p>$14.000</p>
+                </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Berenjenas Napolitanas</p>
                   <p>$20.000</p>
@@ -135,6 +167,10 @@
                 <p class="descripcion-comida">
                   Tomate, Albahaca, Prosciutto, Ajo, Parmesano & Bufala
                 </p>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Burrata</p>
+                  <p>$25.000</p>
+                </li>
               </ul>
             </div>
           </div>
@@ -153,11 +189,11 @@
             <ul>
               <li class="titulo-precio-comida">
                 <p class="puntito">Desayuno Americano</p>
-                <p>$20.000</p>
+                <p>$28.000</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="puntito">Desayuno Continental</p>
-                <p>$20.000</p>
+                <p>$35.000</p>
               </li>
             </ul>
             <!-- </div> -->
@@ -185,15 +221,15 @@
               <ol>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Crema de Alcachofa y Espinaca</p>
-                  <p>$20.000</p>
+                  <p>$18.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Crema de Tomate</p>
-                  <p>$20.000</p>
+                  <p>$16.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Zuppa Frutos del Mar</p>
-                  <p>$20.000</p>
+                  <p>$38.000</p>
                 </li>
               </ol>
             </div>
@@ -213,7 +249,7 @@
               <ul>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Capresse</p>
-                  <p>$20.000</p>
+                  <p>$28.000</p>
                 </li>
                 <p class="descripcion-comida">
                   Lechuga, Albahaca, Tomate, Mozzarella, Pesto, Rugúla, &
@@ -221,7 +257,7 @@
                 </p>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Cesar</p>
-                  <p>$20.000</p>
+                  <p>$30.000</p>
                 </li>
                 <p class="descripcion-comida">
                   Pollo, Protones de pan, Champiñones, Apio, Variedad de
@@ -236,7 +272,7 @@
               <ul>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Mediterranea</p>
-                  <p>$20.000</p>
+                  <p>$42.000</p>
                 </li>
                 <p class="descripcion-comida">
                   Variedad de Verduras, Salmón Salteado, Aceitunas, Parmesano &
@@ -244,7 +280,7 @@
                 </p>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Amore Mio</p>
-                  <p>$20.000</p>
+                  <p>$35.000</p>
                 </li>
                 <p class="descripcion-comida">
                   Variedad de Lechugas, Zuchinni, Tomate, Rugúla, Albahaca,
@@ -252,6 +288,45 @@
                 </p>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="desayunos baguetas">
+        <!-- Adiciones -->
+        <div class="container-boceto center">
+          <h1 class="title-seccion-menu hide-big-screen">Adiciones</h1>
+        </div>
+        <div>
+          <h1 class="title-seccion-menu hide center">Adiciones</h1>
+          <hr />
+          <div class="detalle-menu-adiciones">
+            <!-- <div class="cincuenta"> En caso de utilizar foto en esta seccion -->
+            <ol class="noventa">
+              <li class="titulo-precio-adiciones">
+                <p class="">Porción de Papas</p>
+                <p>$7.000</p>
+              </li>
+              <li class="titulo-precio-adiciones">
+                <p class="">Porción de Pan</p>
+                <p>$3.000</p>
+              </li>
+              <li class="titulo-precio-adiciones">
+                <p class="">Porción de Queso Parmesano</p>
+                <p>$4.000</p>
+              </li>
+              <li class="titulo-precio-adiciones">
+                <p class="">Adición de Quesos Maduros</p>
+                <p>$20.000</p>
+              </li>
+              <li class="titulo-precio-adiciones">
+                <p class="">Ensalada Acompañamiento</p>
+                <p>$20.000</p>
+              </li>
+            </ol>
+            <!-- </div> -->
+            <!-- <div class="cincuenta">
+              <img class="img-desayuno" src="./assets/pasta.webp" alt="" />
+            </div> -->
           </div>
         </div>
       </section>
@@ -271,15 +346,15 @@
               <ul class="cuarenta-y-cinco">
                 <li class="titulo-precio-comida">
                   <p class="puntito">Vegetales</p>
-                  <p>$20.000</p>
+                  <p>$35.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Salmón - Espinaca</p>
-                  <p>$20.000</p>
+                  <p>$45.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Pollo Campiñon</p>
-                  <p>$20.000</p>
+                  <p>$38.000</p>
                 </li>
                 <p class="descripcion-comida">
                   Variedad de Verduras, Salmón Salteado, Aceitunas, Parmesano &
@@ -287,12 +362,20 @@
                 </p>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Bologñesa</p>
-                  <p>$20.000</p>
+                  <p>$36.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Mixta</p>
-                  <p>$20.000</p>
+                  <p>$38.000</p>
                 </li>
+                <p class="descripcion-comida">Pollo, Champiñon, & Lomo</p>
+                <li class="titulo-precio-comida">
+                  <p class="puntito">Berenjenas & Tomate</p>
+                  <p>$35.000</p>
+                </li>
+                <p class="descripcion-comida">
+                  Berenjena, Tomate, Parmesano, Mozzarella & Pesto
+                </p>
               </ul>
             </div>
           </div>
@@ -328,15 +411,15 @@
                 <ul class="ravioles-lista">
                   <li class="titulo-precio-comida">
                     <p class="puntito">Napolitana</p>
-                    <p>$20.000</p>
+                    <p>$32.000</p>
                   </li>
                   <li class="titulo-precio-comida">
                     <p class="puntito">Cuatro Quesos</p>
-                    <p>$20.000</p>
+                    <p>$32.000</p>
                   </li>
                   <li class="titulo-precio-comida">
                     <p class="puntito">Alfredo</p>
-                    <p>$20.000</p>
+                    <p>$32.000</p>
                   </li>
                   <p class="descripcion-comida">
                     Variedad de Verduras, Salmón Salteado, Aceitunas, Parmesano
@@ -344,7 +427,7 @@
                   </p>
                   <li class="titulo-precio-comida">
                     <p class="puntito">Gratinados</p>
-                    <p>$20.000</p>
+                    <p>$38.000</p>
                   </li>
                 </ul>
               </div>
@@ -358,7 +441,7 @@
         <hr class="y-title-seccion-menu hide-big-screen" />
         <div class="container-img">
           <img
-            class="img-section-menu-opcionA"
+            class="img-section-menu-pastas"
             src="./assets/pasta.webp"
             alt=""
           />
@@ -370,33 +453,42 @@
             <ul>
               <li class="titulo-precio-comida">
                 <p class="puntito">Fetuccine Frutos del Mar</p>
-                <p>$20.000</p>
+                <p>$46.500</p>
               </li>
+              <p class="descripcion-comida">Pasta Artesanal</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Arrabiata</p>
-                <p>$20.000</p>
+                <p>$30.000</p>
               </li>
               <p class="descripcion-comida">Aceitunas, Picante, Napolitana</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Carbonara</p>
-                <p>$20.000</p>
+                <p>$35.000</p>
               </li>
               <p class="descripcion-comida">Prosciutto, Tocineta y Parmesano</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Bologñesa</p>
-                <p>$20.000</p>
+                <p>$30.000</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="puntito">Pesto</p>
-                <p>$20.000</p>
+                <p>$28.000</p>
               </li>
               <li class="titulo-precio-comida">
-                <p class="puntito">Amore Mio</p>
-                <p>$20.000</p>
+                <p class="puntito">Al Salmone</p>
+                <p>$40.000</p>
               </li>
               <p class="descripcion-comida">
                 Salmón, Crema, Vino, Napolitana & Gengibre
               </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Pollo & Champiñon</p>
+                <p>$30.000</p>
+              </li>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Putanesca</p>
+                <p>$30.000</p>
+              </li>
             </ul>
           </div>
         </div>
@@ -407,41 +499,52 @@
           <div class="detalle-menu m-extra">
             <ul>
               <li class="titulo-precio-comida">
+                <p class="puntito">4 Quesos</p>
+                <p>$30.000</p>
+              </li>
+              <li class="titulo-precio-comida">
                 <p class="puntito">Primavera</p>
-                <p>$20.000</p>
+                <p>$30.000</p>
               </li>
               <p class="descripcion-comida">Tomate, Albahaca & Atún</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Amatriciana</p>
-                <p>$20.000</p>
+                <p>$30.000</p>
               </li>
               <p class="descripcion-comida">
                 Tocineta, Cebolla, Napolitana, & Tomate
               </p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Vongole</p>
-                <p>$20.000</p>
+                <p>$35.000</p>
               </li>
               <p class="descripcion-comida">
                 Mejillones, Vino Blanco, Napolitana
               </p>
               <li class="titulo-precio-comida">
-                <p class="puntito">Rigate 4 Quesos al horno</p>
-                <p>$20.000</p>
+                <p class="puntito">Rigate 4 Quesos al horno (Gratinada)</p>
+                <p>$35.000</p>
               </li>
               <li class="titulo-precio-comida">
-                <p class="puntito">Pasta Melanzane</p>
-                <p>$20.000</p>
+                <p class="puntito">Melanzane</p>
+                <p>$30.000</p>
               </li>
               <p class="descripcion-comida">
                 Pasta Corta, Berenjenas, Napolitana & Ricota
               </p>
               <li class="titulo-precio-comida">
-                <p class="puntito">Pasta Napolitana</p>
-                <p>$20.000</p>
+                <p class="puntito">Napolitana</p>
+                <p>$28.000</p>
               </li>
               <p class="descripcion-comida">
                 Pasta al Burro, Tomate, Albahaca, Bufala Fresca
+              </p>
+              <li class="titulo-precio-comida">
+                <p class="puntito">Pasta Junior</p>
+                <p>$20.000</p>
+              </li>
+              <p class="descripcion-comida">
+                Bologñesa, Burro, Pollo & Chanpiñon
               </p>
             </ul>
           </div>
@@ -449,7 +552,7 @@
         <div class="container-img">
           <img
             class="img-section-menu-opcionB"
-            src="./assets/pasta.webp"
+            src="./assets/pasta.jpg"
             alt=""
           />
         </div>
@@ -467,17 +570,17 @@
             <ol class="number-counter">
               <li class="titulo-precio-comida">
                 <p class="number">Prosciutto, Mozzarella, Albahaca, Pesto</p>
-                <p>$20.000</p>
+                <p>$16.000</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="number">Champiñones Salteados, Quesos Maduros</p>
-                <p>$20.000</p>
+                <p>$16.000</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="number">
                   Tomate, Parmesano, Albahaca, Berenjenas, Pimentones Asados.
                 </p>
-                <p>$20.000</p>
+                <p>$16.000</p>
               </li>
             </ol>
             <!-- </div> -->
@@ -500,24 +603,24 @@
             <ol class="noventa">
               <li class="titulo-precio-comida">
                 <p class="">Frutos del Mar</p>
-                <p>$20.000</p>
+                <p>$46.500</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="">Prosciutto & Tocineta</p>
-                <p>$20.000</p>
+                <p>$35.000</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="">Pulpo & Vino Tinto</p>
-                <p>$20.000</p>
+                <p>$35.000</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="">Lomo</p>
-                <p>$20.000</p>
+                <p>$38.000</p>
               </li>
               <p class="descripcion-comida">Pesto y & Champiñones</p>
               <li class="titulo-precio-comida">
                 <p class="">Vegetales</p>
-                <p>$20.000</p>
+                <p>$30.000</p>
               </li>
             </ol>
             <!-- </div> -->
@@ -540,24 +643,24 @@
             <ul class="noventa">
               <li class="titulo-precio-comida">
                 <p class="puntito">Salmón al Romero</p>
-                <p>$20.000</p>
+                <p>$46.500</p>
               </li>
               <p class="descripcion-comida">Salsa Blanca, Vino, Mandarina.</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Salmón al Balsámico</p>
-                <p>$20.000</p>
+                <p>$46.500</p>
               </li>
               <p class="descripcion-comida">Tomate Asado, Rúgula, Balsámico.</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Mero Rey</p>
-                <p>$20.000</p>
+                <p>$46.500</p>
               </li>
               <p class="descripcion-comida">
                 Tomillo, Langostinos, Vino Crema.
               </p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Robalo al Cartoccio</p>
-                <p>$20.000</p>
+                <p>$46.500</p>
               </li>
               <p class="descripcion-comida">
                 Al horno, Verduras, 3 Salsas, & Queso.
@@ -573,7 +676,7 @@
         <div class="container-img">
           <img
             class="img-section-menu-opcionA"
-            src="./assets/pasta.webp"
+            src="./assets/carne.jpg"
             alt=""
           />
         </div>
@@ -584,48 +687,48 @@
             <ul>
               <li class="titulo-precio-comida">
                 <p class="puntito">Birra</p>
-                <p>$20.000</p>
+                <p>$48.000</p>
               </li>
               <p class="descripcion-comida">Champiñones, Tocineta, Crema</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Gratinado</p>
-                <p>$20.000</p>
+                <p>$46.000</p>
               </li>
               <p class="descripcion-comida">Napolitana, Mozzarella</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Al Vino</p>
-                <p>$20.000</p>
+                <p>$46.000</p>
               </li>
               <p class="descripcion-comida">Pimienta, Napolitana, Vino</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Lomo Amore Mio</p>
-                <p>$20.000</p>
+                <p>$46.000</p>
               </li>
               <p class="descripcion-comida">Salsa de Queso Azul</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">A la Plancha</p>
-                <p>$20.000</p>
+                <p>$46.000</p>
               </li>
               <p class="descripcion-comida">
                 Lomo, Tomates, Champiñones Asados, & Reducción Balsámico
               </p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Al Hojaldre</p>
-                <p>$20.000</p>
+                <p>$48.000</p>
               </li>
               <p class="descripcion-comida">Cocción Termino 1/2</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Lomo Mediterraneo</p>
-                <p>$20.000</p>
+                <p>$48.000</p>
               </li>
               <p class="descripcion-comida">Alcaparras, Aceitunas, Champiñon</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Costillas Reducción Balsámico</p>
-                <p>$20.000</p>
+                <p>$48.000</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="puntito">Rib Eye</p>
-                <p>$20.000</p>
+                <p>$46.500</p>
               </li>
               <p class="descripcion-comida">
                 Sellado, Romero, Mantequilla, Anchoas
@@ -645,25 +748,25 @@
             <ul>
               <li class="titulo-precio-comida">
                 <p class="puntito">En Salsas Especiales</p>
-                <p>$20.000</p>
+                <p>$40.000</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="puntito">Gratinado</p>
-                <p>$20.000</p>
+                <p>$40.000</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="puntito">Birra</p>
-                <p>$20.000</p>
+                <p>$40.000</p>
               </li>
               <p class="descripcion-comida">Champiñon, Tocineta, Crema</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Al Horno</p>
-                <p>$20.000</p>
+                <p>$40.000</p>
               </li>
               <p class="descripcion-comida">Espinaca & Mozzarella</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">A la Plancha</p>
-                <p>$20.000</p>
+                <p>$40.000</p>
               </li>
               <p class="descripcion-comida">Vegetales Asados</p>
             </ul>
@@ -678,26 +781,26 @@
         </div>
       </section>
       <section class="desayunos baguetas">
-        <!-- Sandwiches -->
+        <!-- Sándwiches -->
         <div class="container-boceto">
-          <h1 class="title-seccion-menu hide-big-screen">Sandwiches</h1>
+          <h1 class="title-seccion-menu hide-big-screen">Sándwiches</h1>
         </div>
         <div>
-          <h1 class="title-seccion-menu hide">Sandwiches</h1>
+          <h1 class="title-seccion-menu hide">Sándwiches</h1>
           <hr />
           <div class="detalle-menu-b">
             <!-- <div class="cincuenta"> En caso de utilizar foto en esta seccion -->
             <ol class="noventa">
               <li class="titulo-precio-comida">
                 <p class="">Italianisimo</p>
-                <p>$20.000</p>
+                <p>$28.000</p>
               </li>
               <p class="descripcion-comida">
                 Prosciutto, Salami, Aceitunas, Jamon, Queso & Pesto
               </p>
               <li class="titulo-precio-comida">
                 <p class="">Amore Mio</p>
-                <p>$20.000</p>
+                <p>$28.000</p>
               </li>
               <p class="descripcion-comida">
                 Pollo, Champiñon, Mozzarella & Pesto
@@ -709,7 +812,7 @@
               <p class="descripcion-comida">Jamón & Queso</p>
               <li class="titulo-precio-comida">
                 <p class="">Capresse</p>
-                <p>$20.000</p>
+                <p>$28.000</p>
               </li>
               <p class="descripcion-comida">
                 Tomate, Albahaca, Mozzarella & Pesto
@@ -729,7 +832,7 @@
         <div class="container-img-pizza-a">
           <img
             class="img-section-menu-opcionA"
-            src="./assets/pasta.webp"
+            src="./assets/pizza.jpg"
             alt=""
           />
         </div>
@@ -751,30 +854,30 @@
               </li>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">Napolitana</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$28.000</p>
+                <p class="veinte">$32.000</p>
               </li>
               <p class="descripcion-comida">Mozzarella, Albahaca, Tomate</p>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">Amici</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$30.000</p>
+                <p class="veinte">$38.000</p>
               </li>
               <p class="descripcion-comida">
                 Prosciutto, Salami, Jamon, Mozzarella
               </p>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">Capresse</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$28.000</p>
+                <p class="veinte">$35.000</p>
               </li>
               <p class="descripcion-comida">
                 Tomate, Mozzarella, Albahaca, Pesto
               </p>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">A la Huerta</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$28.000</p>
+                <p class="veinte">$38.000</p>
               </li>
               <p class="descripcion-comida">
                 Aceitunas, Espinaca, Champiñon, Cebolla, Pimentón Asado &
@@ -782,24 +885,24 @@
               </p>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">A la Plancha</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$30.000</p>
+                <p class="veinte">$40.000</p>
               </li>
               <p class="descripcion-comida">
                 Lomo, Tomates, Champiñones Asados
               </p>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">Primavera</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$28.000</p>
+                <p class="veinte">$38.000</p>
               </li>
               <p class="descripcion-comida">
                 Atún, Tomate, Albahaca, Mozzarella
               </p>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">Pollo & Champiñon</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$30.000</p>
+                <p class="veinte">$40.000</p>
               </li>
             </ul>
           </div>
@@ -823,54 +926,54 @@
               </li>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">Ana Maria</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$28.000</p>
+                <p class="veinte">$35.000</p>
               </li>
               <p class="descripcion-comida">
                 Manzana Verde, Camembert, Albahaca, Mozzarella & Jamon
               </p>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">Marinera</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte"></p>
+                <p class="veinte">$45.000</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">4 Quesos</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$28.000</p>
+                <p class="veinte">$38.000</p>
               </li>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">4 Estaciones</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$28.000</p>
+                <p class="veinte">$38.000</p>
               </li>
               <p class="descripcion-comida">
                 Alcachofas, Aceitunas, Champiñon, Cebolla
               </p>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">Amore Mio</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$30.000</p>
+                <p class="veinte">$40.000</p>
               </li>
               <p class="descripcion-comida">
                 Prosciutto, Mozzarella, Bufala, Tomate, Rugula, Albahaca
               </p>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">Dolce Vitta</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$28.000</p>
+                <p class="veinte">$35.000</p>
               </li>
               <p class="descripcion-comida">Melocotón, Jamon & Ciruelas</p>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">Bambino</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$28.000</p>
+                <p class="veinte">$38.000</p>
               </li>
               <p class="descripcion-comida">Piña, Jamon & Peperoni</p>
               <li class="titulo-precio-comida">
                 <p class="puntito cuarenta-cinco">Di Parma</p>
-                <p class="veinte">$20.000</p>
-                <p class="veinte">$20.000</p>
+                <p class="veinte">$30.000</p>
+                <p class="veinte">$40.000</p>
               </li>
               <p class="descripcion-comida">
                 Parmesano, Prosciutto, Alcachofa, Albahaca, Aceitunas & Pesto
@@ -955,6 +1058,7 @@
                   </li>
                 </ol>
                 <ol class="postres-sabores container-helados">
+                  <!--Helados -->
                   <h3 class="title-sabores m-extra-phone">Helados</h3>
                   <li class="opciones-sabores postres-margin helados">
                     <p class="star sesenta-phone">Porcion de Helado</p>
@@ -984,6 +1088,7 @@
                   </p>
                 </ol>
                 <ol class="postres-sabores container-helados">
+                  <!-- Sin Gluten -->
                   <h3 class="title-sabores m-extra-phone">Sin Gluten</h3>
                   <li class="opciones-sabores postres-margin helados">
                     <p class="star sesenta-phone">Chocolate Belga</p>
@@ -991,6 +1096,10 @@
                   </li>
                   <li class="opciones-sabores postres-margin helados">
                     <p class="star sesenta-phone">Zanahoria</p>
+                    <p class="veinte-phone">$6.000</p>
+                  </li>
+                  <li class="opciones-sabores postres-margin helados">
+                    <p class="star sesenta-phone">Tiramisú</p>
                     <p class="veinte-phone">$6.000</p>
                   </li>
                 </ol>
@@ -1014,87 +1123,79 @@
               <ul class="noventa">
                 <li class="titulo-precio-comida">
                   <p class="puntito">Americano Oscuro</p>
-                  <p>$20.000</p>
+                  <p>$4.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Americano Suave</p>
-                  <p>$20.000</p>
+                  <p>$4.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Campesino</p>
-                  <p>$20.000</p>
+                  <p>$4.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Americano Doble</p>
-                  <p>$20.000</p>
+                  <p>$4.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Latte</p>
-                  <p>$20.000</p>
+                  <p>$3.300</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Capuccino</p>
-                  <p>$20.000</p>
+                  <p>$6.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Affogato Expresso + Helado</p>
-                  <p>$20.000</p>
+                  <p>$9.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Expresso Corto</p>
-                  <p>$20.000</p>
+                  <p>$4.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Expresso Doble</p>
-                  <p>$20.000</p>
+                  <p>$6.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Copa de Vino Caliente</p>
-                  <p>$20.000</p>
-                </li>
-                <li class="titulo-precio-comida">
-                  <p class="puntito">Americano Suave</p>
-                  <p>$20.000</p>
-                </li>
-                <li class="titulo-precio-comida">
-                  <p class="puntito">Americano Oscuro</p>
-                  <p>$20.000</p>
+                  <p>$6.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Chocolate</p>
-                  <p>$20.000</p>
+                  <p>$5.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Milo</p>
-                  <p>$20.000</p>
+                  <p>$6.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Aromatica de Frutas</p>
-                  <p>$20.000</p>
+                  <p>$4.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Aromatica de Hierbas</p>
-                  <p>$20.000</p>
+                  <p>$4.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Té en agua</p>
-                  <p>$20.000</p>
+                  <p>$4.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Té en leche</p>
-                  <p>$20.000</p>
+                  <p>$4.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Canelazo</p>
-                  <p>$20.000</p>
+                  <p>$15.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Carajillo</p>
-                  <p>$20.000</p>
+                  <p>$15.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Té chai</p>
-                  <p>$20.000</p>
+                  <p>$6.000</p>
                 </li>
               </ul>
             </div>
@@ -1114,57 +1215,57 @@
               <ul class="noventa">
                 <li class="titulo-precio-comida">
                   <p class="puntito">Milo Frio</p>
-                  <p>$20.000</p>
+                  <p>$6.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Gaseosa</p>
-                  <p>$20.000</p>
+                  <p>$5.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Cerveza Nacional</p>
-                  <p>$20.000</p>
+                  <p>$7.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Cerveza Importada</p>
-                  <p>$20.000</p>
+                  <p>$10.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Micheladas</p>
-                  <p>$20.000</p>
+                  <p>$12.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Malteadas</p>
-                  <p>$20.000</p>
+                  <p>$12.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Malteada</p>
-                  <p>$20.000</p>
+                  <p>$15.000</p>
                 </li>
                 <p class="descripcion-comida">Vainilla - Baileys - Macadamia</p>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Granizado de Fruta</p>
-                  <p>$20.000</p>
+                  <p>$10.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Granizado de Café</p>
-                  <p>$20.000</p>
+                  <p>$10.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Vino de Verano</p>
-                  <p>$20.000</p>
+                  <p>$18.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Capuccino</p>
-                  <p>$20.000</p>
+                  <p>$7.500</p>
                 </li>
                 <p class="descripcion-comida">Leche de Almendras</p>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Latte Frio</p>
-                  <p>$20.000</p>
+                  <p>$9.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Limonada Cerezada</p>
-                  <p>$20.000</p>
+                  <p>$8.500</p>
                 </li>
               </ul>
             </div>
@@ -1182,39 +1283,39 @@
               <ul class="noventa">
                 <li class="titulo-precio-comida">
                   <p class="puntito">Jugo en agua</p>
-                  <p>$20.000</p>
+                  <p>$6.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Jugo en leche</p>
-                  <p>$20.000</p>
+                  <p>$7.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Mandarina</p>
-                  <p>$20.000</p>
+                  <p>$11.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Naranja</p>
-                  <p>$20.000</p>
+                  <p>$9.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Limonada de Coco</p>
-                  <p>$20.000</p>
+                  <p>$9.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Limonada Natural</p>
-                  <p>$20.000</p>
+                  <p>$6.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Limonada Yerbabuena</p>
-                  <p>$20.000</p>
+                  <p>$7.500</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Botella de Agua</p>
-                  <p>$20.000</p>
+                  <p>$5.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Zumo de Limón</p>
-                  <p>$20.000</p>
+                  <p>$3.000</p>
                 </li>
               </ul>
             </div>
@@ -1234,18 +1335,14 @@
               <ul class="noventa">
                 <li class="titulo-precio-comida">
                   <p class="puntito">Frutos Rojos</p>
-                  <p>$20.000</p>
+                  <p>$12.500</p>
                 </li>
                 <p class="descripcion-comida">(con licor de Cereza)</p>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Amore Mio</p>
-                  <p>$20.000</p>
+                  <p>$12.500</p>
                 </li>
                 <p class="descripcion-comida">(Maracuyá, Lychee, & Limón)</p>
-                <li class="titulo-precio-comida">
-                  <p class="puntito">Zuppa Frutos del Mar</p>
-                  <p>$20.000</p>
-                </li>
               </ul>
             </div>
           </div>
@@ -1262,11 +1359,11 @@
               <ul class="noventa">
                 <li class="titulo-precio-comida">
                   <p class="puntito">Whisky</p>
-                  <p>$20.000</p>
+                  <p>$28.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Baileys</p>
-                  <p>$20.000</p>
+                  <p>$15.000</p>
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Copa de Baileys</p>
@@ -1274,7 +1371,7 @@
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Copa de Vino</p>
-                  <p>$20.000</p>
+                  <p>$15.000</p>
                 </li>
               </ul>
             </div>
@@ -1292,19 +1389,19 @@
               <div class="three-containers-vino">
                 <ul>
                   <li class="titulo-precio-comida">
-                    <p class="puntito">Jovén de la casa</p>
-                    <p>$20.000</p>
+                    <p class="puntito">Joven de la casa</p>
+                    <p>$65.000</p>
                   </li>
                   <li class="titulo-precio-comida">
                     <p class="puntito">Denominación Origen</p>
-                    <p>$20.000</p>
+                    <p>$95.000</p>
                   </li>
                   <p class="descripcion-comida">
                     (Italiano - Francés - Español)
                   </p>
                   <li class="titulo-precio-comida">
                     <p class="puntito">Gran Reserva</p>
-                    <p>$20.000</p>
+                    <p>$150.000</p>
                   </li>
                 </ul>
               </div>
@@ -1319,11 +1416,11 @@
                   </li>
                   <li class="titulo-precio-comida">
                     <p class="puntito">Media Botella</p>
-                    <p>$20.000</p>
+                    <p>$38.000</p>
                   </li>
                   <li class="titulo-precio-comida">
-                    <p class="puntito">Gran Reserva Seielion</p>
-                    <p>$20.000</p>
+                    <p class="puntito">Gran Reserva Selección</p>
+                    <p>$230.000</p>
                   </li>
                   <p class="descripcion-comida">
                     (Italiano - Francés - Español)
