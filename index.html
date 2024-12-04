@@ -19,17 +19,18 @@
             </div>
             <div class="container-title-marca">
               <!-- <h3 class="title-marca">Amore Mio</h3> -->
-              <img
-                class="logo-amore-mio"
-                src="./assets/Logo Amore Mio.png"
-                alt=""
-              />
+              <a href="/"
+                ><img
+                  class="logo-amore-mio"
+                  src="./assets/Logo Amore Mio.png"
+                  alt=""
+              /></a>
             </div>
           </div>
           <div class="container-btnes-navbar">
             <div class="navbar-buttons">
-              <button class="btn">Domicilios</button>
-              <button class="btn">Reservaciones</button>
+              <a href=""><button class="btn">Domicilios</button></a>
+              <a href=""><button class="btn">Reservaciones</button></a>
             </div>
           </div>
         </div>
@@ -970,7 +971,7 @@
                 <p class="">Capresse</p>
                 <p>$28.000</p>
               </li>
-              <p  class="descripcion-comida">
+              <p class="descripcion-comida">
                 Tomate, Albahaca, Mozzarella & Pesto
               </p>
             </ol>
@@ -1204,11 +1205,13 @@
                   <li class="opciones-sabores postres-margin">
                     <p class="star">
                       Coco Azul
-                      <span id="helados" class="descripcion-mini">(Limón - Coco)</span>
+                      <span id="helados" class="descripcion-mini"
+                        >(Limón - Coco)</span
+                      >
                     </p>
                   </li>
                   <li class="opciones-sabores">
-                    <p  class="star descripcion-medium">
+                    <p class="star descripcion-medium">
                       Helado + Postre <b class="descripcion-mini-2">$12.500</b>
                     </p>
                   </li>
@@ -1588,40 +1591,63 @@
         </section>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="custom-footer">
       <div class="footer-container">
-        <!-- Reservaciones y Domicilios -->
-        <div class="footer-section">
-          <h3 class="footer-title">Reservaciones & Domicilios</h3>
-          <p>Llama al: <a href="tel:+1234567890">+1 234 567 890</a></p>
-          <p>Horario: Lunes a Domingo, 9:00 AM - 10:00 PM</p>
-        </div>
-        <!-- Redes Sociales -->
-        <div class="footer-section">
-          <h3 class="footer-title">Síguenos</h3>
+        <!-- Sección de Redes Sociales -->
+        <div class="footer-section social-media">
+          <div class="icon"></div>
+          <h4>Conéctate con nosotros</h4>
           <div class="social-icons">
-            <a href="#" aria-label="Facebook" class="social-icon">🌐</a>
-            <a href="#" aria-label="Instagram" class="social-icon">📸</a>
-            <a href="#" aria-label="WhatsApp" class="social-icon">📞</a>
+            <a
+              href="https://www.instagram.com/amoremio.vdl/?hl=es"
+              target="_blank"
+              class="social-icon"
+              ><img class="icon-whats" src="./assets/insta.svg" alt=""
+            /></a>
+            <a
+              href="https://wa.me/c/573123676365"
+              target="_blank"
+              class="social-icon"
+              ><img class="icon-whats" src="./assets/whats.svg" alt=""
+            /></a>
+            <a
+              href="https://www.google.com/maps/place/Amore+M%C3%ADo/@5.6351383,-73.5217321,15z/data=!4m6!3m5!1s0x8e41d70e100fc57f:0x5198b069d864da7a!8m2!3d5.6351383!4d-73.5217321!16s%2Fg%2F11dfhx31_7?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              class="social-icon"
+              ><img class="icon-whats" src="./assets/maps.svg" alt=""
+            /></a>
+          </div>
+          <h4>Encuéntranos aquí</h4>
+          <p>📍 Villa de Leyva<br /></p>
+        </div>
+
+        <!-- Sección de Horarios -->
+        <div class="footer-section opening-hours">
+          <h4>Nuestros Horarios</h4>
+          <p>Lunes: 10:00 AM - 8:00 PM</p>
+          <p>Martes: 10:00 AM - 8:00 PM</p>
+          <p>Miercoles: 10:00 AM - 8:00 PM</p>
+          <p>Jueves: 10:00 AM - 8:00 PM</p>
+          <p>Viernes: 10:00 AM - 9:00 PM</p>
+          <p>Sábado: 10:00 AM - 9:00 PM</p>
+          <p>Domingo: 10:00 AM - 9:00 PM</p>
+        </div>
+
+        <!-- Sección de Contacto -->
+        <div class="footer-section">
+          <div class="footer-section">
+            <h4 class="footer-title">Eventos y Reservas</h4>
+            <p class="footer-text">
+              ¿Planeas un evento especial? ¡Haz tu reserva con nosotros!
+            </p>
+            <a href=""
+              ><button class="footer-button">Déjalo en nuestras manos</button></a
+            >
           </div>
         </div>
-
-        <!-- Ubicación -->
-        <div class="footer-section">
-          <h3 class="footer-title">Encuéntranos</h3>
-          <p>📍 Villa de Leyva, Boyaca.</p>
-          <p>
-            <a href="https://www.google.com/maps" target="_blank"
-              >Ver en Google Maps</a
-            >
-          </p>
-        </div>
       </div>
-
-      <!-- Copyright -->
-      <div class="footer-bottom">
+      <div class="footer-copyright">
         <p>&copy; 2024 Amore Mio. Todos los derechos reservados.</p>
-        <!-- <p>Desarrollado con ❤️ por <a href="#">Tu Nombre</a></p> -->
       </div>
     </footer>
     <script src="main.js"></script>

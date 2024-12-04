@@ -4,6 +4,24 @@ html {
   scroll-behavior: smooth; /* Scroll suave para toda la página */
 }
 
+/* Aplica el estilo globalmente */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6b6b;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888888;
+}
+
 /* Reset básico */
 * {
   margin: 0;
@@ -36,7 +54,7 @@ body {
     0,
     0,
     0,
-    0.8
+    0.9
   ); /* Fondo oscuro semi-transparente al hacer scroll */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
 }
@@ -710,83 +728,106 @@ ul {
 }
 
 /* Footer General */
-.footer {
-  background: #1a1a1a;
-  color: #f5f5f5;
-  padding: 30px 20px;
-  font-family: "Arial", sans-serif;
+.custom-footer {
+  background: #000000ec;
+  color: #f0e6d2;
+  padding: 40px 20px;
   text-align: center;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Contenedor principal del footer */
 .footer-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: space-around;
   max-width: 1200px;
   margin: 0 auto;
+  gap: 20px;
 }
 
-/* Estilos para cada sección del footer */
+/* Secciones del Footer */
 .footer-section {
   flex: 1;
   min-width: 250px;
 }
 
-.footer-title {
+.footer-section h4 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #ff3434;
+  margin-bottom: 15px;
+  color: #ff6b6b;
 }
 
 .footer-section p {
-  margin: 5px 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
-.footer-section a {
-  color: #ff8f8f;
-  text-decoration: none;
+.social-media .icon {
+  font-size: 3rem;
+  color: #ff6b6b;
+  margin-bottom: 10px;
 }
 
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-/* Redes Sociales */
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  margin: 10px 0;
 }
 
 .social-icon {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #ff0000;
-  transition: transform 0.3s, color 0.3s;
+  font-size: 1.2rem;
+  color: #f0e6d2;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s, color 0.3s;
 }
 
 .social-icon:hover {
-  color: #ff5151;
-  transform: scale(1.2);
+  background: #ff6b6b;
+  color: #000;
 }
 
-/* Parte inferior del footer */
-.footer-bottom {
+/* Horarios */
+.opening-hours p {
+  margin: 5px 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.icon-whats {
+  width: 30px;
+}
+
+.footer-button {
+  padding: 10px 15px;
+  background-color: #ff6b6b; /* Color cálido para destacar */
+  color: black;
+  font-size: 15px;
+  font-family: "Baskervville", serif;
+  font-weight: bold;
+  font-style: normal;
+  border: none;
+  border-radius: 25px; /* Bordes redondeados para un look suave */
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.footer-button:hover {
+  background-color: #b14949; /* Un tono más oscuro al pasar el mouse */
+}
+
+.footer-copyright {
   margin-top: 20px;
-  font-size: 0.9rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+  color: #aaa;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 10px;
-}
-
-.footer-bottom a {
-  color: #ff0000;
-  text-decoration: none;
-}
-
-.footer-bottom a:hover {
-  text-decoration: underline;
 }
 
 @media (min-width: 480px) {
@@ -898,15 +939,6 @@ ul {
   .vino-container {
     width: 10%;
   }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-section {
-    text-align: center;
-  }
 }
 
 @media (max-width: 480px) {
@@ -993,7 +1025,6 @@ ul {
 
   .img-section-menu-opcionA {
     width: 320px;
-    height: 60vh;
     margin-left: auto;
   }
 
