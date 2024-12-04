@@ -78,6 +78,12 @@ body {
   z-index: 9999;
 }
 
+.icons-menu {
+  width: 30px;
+  margin: 5px;
+  margin-right: 10px;
+}
+
 /* Botones de navegación */
 .navbar-buttons .btn {
   margin-left: 10px;
@@ -101,7 +107,7 @@ body {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 250px;
+  width: 300px;
   height: 100%;
   background: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
   transition: left 0.3s ease-in-out;
@@ -129,7 +135,9 @@ body {
 
 /* Anima los elementos del menú al hacer scroll */
 .menu-item {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.2rem;
   margin: 10px 0;
   text-decoration: none;
@@ -142,7 +150,6 @@ body {
   transform: translateX(10px); /* Desliza un poco al pasar el mouse */
   color: #ff5151; /* Color de hover */
 }
-
 
 .side-menu.open {
   left: 0; /* Desliza el menú desde el lado izquierdo */
@@ -174,6 +181,10 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
+  margin-left: 80px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .close-button:hover {
@@ -182,8 +193,8 @@ body {
 
 .logo-amore-mio {
   width: 80px;
-  z-index: 99999;
   margin-left: 2vw;
+  z-index: 9999;
 }
 
 .intro {
@@ -808,7 +819,6 @@ ul {
   .menu-item {
     text-align: center;
     width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .title-intro {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,28 +39,184 @@
         <div class="menu-content">
           <h3 class="menu-title">Menú</h3>
           <ul class="menu-list">
-            <li><a href="#entradas" class="menu-item">🥗 Entradas</a></li>
-            <li><a href="#desayunos" class="menu-item">🍳 Desayunos</a></li>
-            <li><a href="#cremas" class="menu-item">🥣 Cremas</a></li>
-            <li><a href="#ensaladas" class="menu-item">🥗 Ensaladas</a></li>
-            <li><a href="#adiciones" class="menu-item">🍟 Adiciones</a></li>
-            <li><a href="#lasagnas" class="menu-item">🍲 Lasagnas</a></li>
-            <li><a href="#ravioles" class="menu-item">🍝 Ravioles</a></li>
-            <li><a href="#pastas" class="menu-item">🍝 Pastas</a></li>
-            <li><a href="#baguetas" class="menu-item">🥖 Baguetas</a></li>
-            <li><a href="#risottos" class="menu-item">🍚 Risottos</a></li>
-            <li><a href="#pescados" class="menu-item">🐟 Pescados</a></li>
-            <li><a href="#carnes" class="menu-item">🥩 Carnes</a></li>
-            <li><a href="#pollo" class="menu-item">🍗 Pollo</a></li>
-            <li><a href="#sandwiches" class="menu-item">🥪 Sándwiches</a></li>
-            <li><a href="#pizzas" class="menu-item">🍕 Pizzas</a></li>
-            <li><a href="#postres" class="menu-item">🍰 Postres</a></li>
-            <li><a href="#helados" class="menu-item">🍦 Helados</a></li>
-            <li><a href="#bebidas" class="menu-item">🥤 Bebidas</a></li>
-            <li><a href="#vinos" class="menu-item">🍷 Vinos</a></li>
+            <li>
+              <a onclick="toggleMenu()" href="#desayunos" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/breakfast.svg"
+                    alt="" /></span
+                >Desayunos</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#cremas" class="menu-item"
+                ><span
+                  ><img class="icons-menu" src="./assets/soup.svg" alt=""
+                /></span>
+                Cremas</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#ensaladas" class="menu-item"
+                ><span
+                  ><img class="icons-menu" src="./assets/salad.svg" alt=""
+                /></span>
+                Ensaladas</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#adiciones" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/papas-fritas.svg"
+                    alt="" /></span
+                >Adiciones</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#lasagnas" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/lasagna.svg"
+                    alt="" /></span
+                >Lasagnas</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#ravioles" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/ravioles.svg"
+                    alt="" /></span
+                >Ravioles</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#pastas" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/pasta.svg"
+                    alt="" /></span
+                >Pastas</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#baguetas" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/bagueta.svg"
+                    alt="" /></span
+                >Baguetas</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#risottos" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/Risotto.svg"
+                    alt="" /></span
+                >Risottos</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#pescados" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/fish.svg"
+                    alt="" /></span
+                >Pescados</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#carnes" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/meat.svg"
+                    alt="" /></span
+                >Carnes</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#pollo" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/chiken.svg"
+                    alt="" /></span
+                >Pollo</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#sandwiches" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/sandwich.svg"
+                    alt="" /></span
+                >Sándwiches</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#pizzas" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/pizza.svg"
+                    alt="" /></span
+                >Pizzas</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#postres" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/dessert.svg"
+                    alt="" /></span
+                >Postres</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#helados" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/ice-cream.svg"
+                    alt="" /></span
+                >Helados</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#bebidas" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/drink.svg"
+                    alt="" /></span
+                >Bebidas</a
+              >
+            </li>
+            <li>
+              <a onclick="toggleMenu()" href="#vinos" class="menu-item"
+                ><span
+                  ><img
+                    class="icons-menu"
+                    src="./assets/wine.svg"
+                    alt="" /></span
+                >Vinos</a
+              >
+            </li>
           </ul>
           <button class="close-button" onclick="toggleMenu()">Cerrar</button>
-          
         </div>
       </div>
     </header>
@@ -169,7 +325,7 @@
                 </p>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Burrata</p>
-                  <p>$25.000</p>
+                  <p id="desayunos">$25.000</p>
                 </li>
               </ul>
             </div>
@@ -193,7 +349,7 @@
               </li>
               <li class="titulo-precio-comida">
                 <p class="puntito">Desayuno Continental</p>
-                <p>$35.000</p>
+                <p id="cremas">$35.000</p>
               </li>
             </ul>
             <!-- </div> -->
@@ -229,7 +385,7 @@
                 </li>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Zuppa Frutos del Mar</p>
-                  <p>$38.000</p>
+                  <p id="ensaladas">$38.000</p>
                 </li>
               </ol>
             </div>
@@ -259,7 +415,7 @@
                   <p class="puntito">Cesar</p>
                   <p>$30.000</p>
                 </li>
-                <p class="descripcion-comida">
+                <p id="adiciones" class="descripcion-comida">
                   Pollo, Protones de pan, Champiñones, Apio, Variedad de
                   lechugas, Zuchinni, Parmesano, & Salsa Blanca.
                 </p>
@@ -320,7 +476,7 @@
               </li>
               <li class="titulo-precio-adiciones">
                 <p class="">Ensalada Acompañamiento</p>
-                <p>$20.000</p>
+                <p id="lasagnas">$20.000</p>
               </li>
             </ol>
             <!-- </div> -->
@@ -373,7 +529,7 @@
                   <p class="puntito">Berenjenas & Tomate</p>
                   <p>$35.000</p>
                 </li>
-                <p class="descripcion-comida">
+                <p id="ravioles" class="descripcion-comida">
                   Berenjena, Tomate, Parmesano, Mozzarella & Pesto
                 </p>
               </ul>
@@ -425,7 +581,7 @@
                     Variedad de Verduras, Salmón Salteado, Aceitunas, Parmesano
                     & Espinaca.
                   </p>
-                  <li class="titulo-precio-comida">
+                  <li id="pastas" class="titulo-precio-comida">
                     <p class="puntito">Gratinados</p>
                     <p>$38.000</p>
                   </li>
@@ -557,7 +713,7 @@
           />
         </div>
       </section>
-      <section class="desayunos baguetas">
+      <section id="baguetas" class="desayunos baguetas">
         <!-- Baguetas -->
         <div class="container-boceto">
           <h1 class="title-seccion-menu hide-big-screen">Baguetas</h1>
@@ -590,7 +746,7 @@
           </div>
         </div>
       </section>
-      <section class="desayunos baguetas">
+      <section id="risottos" class="desayunos baguetas">
         <!-- Risottos -->
         <div class="container-boceto">
           <h1 class="title-seccion-menu hide-big-screen">Risottos</h1>
@@ -620,7 +776,7 @@
               <p class="descripcion-comida">Pesto y & Champiñones</p>
               <li class="titulo-precio-comida">
                 <p class="">Vegetales</p>
-                <p>$30.000</p>
+                <p id="pescados">$30.000</p>
               </li>
             </ol>
             <!-- </div> -->
@@ -655,7 +811,7 @@
                 <p class="puntito">Mero Rey</p>
                 <p>$46.500</p>
               </li>
-              <p class="descripcion-comida">
+              <p id="carnes" class="descripcion-comida">
                 Tomillo, Langostinos, Vino Crema.
               </p>
               <li class="titulo-precio-comida">
@@ -730,7 +886,7 @@
                 <p class="puntito">Rib Eye</p>
                 <p>$46.500</p>
               </li>
-              <p class="descripcion-comida">
+              <p id="pollo" class="descripcion-comida">
                 Sellado, Romero, Mantequilla, Anchoas
               </p>
             </ul>
@@ -780,7 +936,7 @@
           />
         </div>
       </section>
-      <section class="desayunos baguetas">
+      <section id="sandwiches" class="desayunos baguetas">
         <!-- Sándwiches -->
         <div class="container-boceto">
           <h1 class="title-seccion-menu hide-big-screen">Sándwiches</h1>
@@ -810,11 +966,11 @@
                 <p>$20.000</p>
               </li>
               <p class="descripcion-comida">Jamón & Queso</p>
-              <li class="titulo-precio-comida">
+              <li id="pizzas" class="titulo-precio-comida">
                 <p class="">Capresse</p>
                 <p>$28.000</p>
               </li>
-              <p class="descripcion-comida">
+              <p  class="descripcion-comida">
                 Tomate, Albahaca, Mozzarella & Pesto
               </p>
             </ol>
@@ -989,7 +1145,7 @@
           />
         </div>
       </section>
-      <section class="type-of-food">
+      <section id="postres" class="type-of-food">
         <!-- Postres-->
         <div class="container-boceto start">
           <h1 class="title-seccion-menu hide-big-screen center">Postres</h1>
@@ -1048,11 +1204,11 @@
                   <li class="opciones-sabores postres-margin">
                     <p class="star">
                       Coco Azul
-                      <span class="descripcion-mini">(Limón - Coco)</span>
+                      <span id="helados" class="descripcion-mini">(Limón - Coco)</span>
                     </p>
                   </li>
                   <li class="opciones-sabores">
-                    <p class="star descripcion-medium">
+                    <p  class="star descripcion-medium">
                       Helado + Postre <b class="descripcion-mini-2">$12.500</b>
                     </p>
                   </li>
@@ -1108,7 +1264,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="bebidas">
         <!--Bebidas-->
         <h1 class="title-seccion-menu center"><b>Bebidas</b></h1>
         <section class="type-of-food">
@@ -1365,7 +1521,7 @@
                   <p class="puntito">Baileys</p>
                   <p>$15.000</p>
                 </li>
-                <li class="titulo-precio-comida">
+                <li id="vinos" class="titulo-precio-comida">
                   <p class="puntito">Copa de Baileys</p>
                   <p>$20.000</p>
                 </li>
