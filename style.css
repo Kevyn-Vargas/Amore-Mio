@@ -366,7 +366,7 @@ body {
 }
 
 .pastas {
-  width: 98%;
+  width: 100%;
   height: max-content;
   display: flex;
   background-color: white;
@@ -508,7 +508,7 @@ hr {
   /*Orientacion Horizontal Screen Big and SmartPhone Vertical Invertida Imagen Abajo*/
   display: flex;
   flex-direction: row;
-  width: 95%;
+  width: 100%;
   height: max-content;
   margin-top: 20px;
   align-items: flex-start;
@@ -992,6 +992,14 @@ ul {
     font-size: 0.9rem;
   }
 
+  ul {
+    place-self: center;
+  }
+
+  ol {
+    place-self: center;
+  }
+
   .type-of-food {
     flex-direction: column;
     margin-top: 0;
@@ -1006,11 +1014,16 @@ ul {
   }
 
   .baguetas {
-    width: 85%;
+    width: 96%;
+    margin-left: 3vw;
   }
 
   .title-seccion-menu {
     align-self: flex-start;
+  }
+
+  .titulo-precio-comida {
+    margin-left: 0;
   }
 
   .container-img {
@@ -1063,6 +1076,10 @@ ul {
     flex-direction: column;
   }
 
+  .detalle-menu-b {
+    justify-content: center;
+  }
+
   .detalle-menu-c {
     flex-direction: column-reverse;
   }
@@ -1084,6 +1101,10 @@ ul {
     width: 75vw;
     margin-top: 20px;
     margin-left: -35px;
+  }
+
+  .margin-salad {
+    margin: 0;
   }
 
   .m-extra {
@@ -1135,6 +1156,10 @@ ul {
     margin-left: 0;
   }
 
+  .container-postres {
+    justify-content: space-around;
+  }
+
   .postres-margin {
     margin-top: 10px;
     display: flex;
@@ -1152,10 +1177,6 @@ ul {
 
   .descripcion-medium {
     font-size: 1rem;
-  }
-
-  .noventa-phone {
-    width: 90%;
   }
 
   .flex-phone {
