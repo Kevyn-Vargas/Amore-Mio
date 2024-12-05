@@ -621,8 +621,12 @@ ul {
 }
 
 .img-ensaladas {
-  width: 35vw;
+  width: 30vw;
   border-radius: 20px;
+}
+
+.ml-cero {
+  margin-left: 0;
 }
 
 .img-ravioles {
@@ -663,6 +667,10 @@ ul {
 }
 
 .flex {
+  display: flex;
+}
+
+.flex-salad {
   display: flex;
 }
 
@@ -725,6 +733,14 @@ ul {
 
 .img-vino {
   width: 10vw;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.margin-salad {
+  margin: 20px 25px;
 }
 
 /* Footer General */
