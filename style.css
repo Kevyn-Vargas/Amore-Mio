@@ -356,8 +356,6 @@ body {
   display: flex;
   background-color: white;
   color: black;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .cremas {
@@ -395,10 +393,10 @@ body {
 .desayunos {
   width: 100%;
   height: max-content;
-  background-color: white;
+  background-color: #ffebd7;
   color: black;
   margin-top: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .pastas {
@@ -440,7 +438,7 @@ body {
 }
 
 .sandwich {
-  background-color: #6e991a;
+  background-color: #78872f;
   padding-bottom: 40px;
 }
 
@@ -597,7 +595,7 @@ body {
 }
 
 .title-seccion-menu {
-  margin-top: 25px;
+  padding-top: 25px;
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: normal;
@@ -744,6 +742,18 @@ hr {
   margin-top: 8px;
 }
 
+.titulo-precio-comida-cremas {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 8px;
+}
+
 .titulo-precio-adiciones {
   font-family: "Baskervville", serif;
   font-weight: 400;
@@ -833,7 +843,7 @@ ul {
 }
 
 .img-lasagnas {
-  width: 30vw;
+  width: 47vw;
   border-radius: 20px;
 }
 
@@ -1158,11 +1168,6 @@ ul {
     width: 50vw;
   }
 
-  .img-lasagnas {
-    width: 97vw;
-    border: 13px solid #c0a767;
-  }
-
   .column768 {
     display: flex;
     flex-direction: column;
@@ -1344,6 +1349,11 @@ ul {
     width: 75vw;
     margin-top: 20px;
     margin-left: -35px;
+  }
+
+  .img-lasagnas {
+    width: 97vw;
+    border: 13px solid #c0a767;
   }
 
   .margin-salad {
