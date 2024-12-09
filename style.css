@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth; /* Scroll suave para toda la página */
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 /* Aplica el estilo globalmente */
 ::-webkit-scrollbar {
   width: 10px;
@@ -347,13 +351,45 @@ body {
 }
 
 .type-of-food {
-  width: 97%;
+  width: 100%;
   height: max-content;
   display: flex;
   background-color: white;
   color: black;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.cremas {
+  background-color: #fffa9f;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.ensaladas {
+  background-color: #a2bf7e;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.adiciones {
+  width: 100%;
+  height: max-content;
+  background-color: #d1d1d1 !important;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.lasagnas {
+  background-color: #a64333;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.ravioles {
+  background-color: #be6832;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 .desayunos {
@@ -369,10 +405,97 @@ body {
   width: 100%;
   height: max-content;
   display: flex;
-  background-color: white;
+  background-color: #bfba7e;
   color: black;
-  margin-top: 30px;
-  margin-bottom: 30px;
+}
+
+.p-pastas {
+  padding-bottom: 40px;
+}
+
+.baguetas {
+  background-color: #9c642b;
+  padding-bottom: 40px;
+}
+
+.risottos {
+  background-color: #726c42;
+  padding-bottom: 40px;
+}
+
+.fish {
+  background-color: #788fda;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.carnes {
+  background-color: black;
+  padding-bottom: 40px;
+}
+
+.pollo {
+  background-color: #ffd984;
+  padding-bottom: 40px;
+}
+
+.sandwich {
+  background-color: #6e991a;
+  padding-bottom: 40px;
+}
+
+.pizzas {
+  background-color: #265429;
+  color: white;
+}
+
+#postres {
+  background-color: #ffbfbf;
+  padding-bottom: 40px;
+}
+
+
+.drinks-hots {
+  background-color: #353535;
+  color: #dba878;
+  padding-bottom: 40px;
+}
+
+.drinks-cold {
+  background-color: #353535;
+  color: #5d7ad6;
+  padding-bottom: 40px;
+}
+
+.jugos {
+  background-color: #353535;
+  color: #8dd65d;
+  padding-bottom: 40px;
+}
+
+.sodas {
+  background-color: #353535;
+  color: #d65db2;
+  padding-bottom: 40px;
+}
+
+.shots {
+  background-color: #353535;
+  color: #d6c45d;
+  padding-bottom: 40px;
+}
+
+.vino {
+  background-color: #353535;
+  color: #b45dd6;
+  padding-bottom: 40px;
+}
+
+#bebidas-title {
+  background-color:#353535 ;
+  color: #cecece;
+  padding: 20px 0;
+  margin: 0;
 }
 
 .container-img {
@@ -417,13 +540,46 @@ body {
   border-radius: 20px;
 }
 
-.img-section-menu-pastas {
+.img-carnes {
   width: 100%;
   margin-left: -20px;
   border-radius: 20px;
+  border-bottom-style: solid;
+  border-bottom-color: #bbb6b1;
+  border-bottom-width: 5px;
+  border-right-style: solid;
+  border-right-color: #bbb6b1;
+  border-right-width: 5px;
+}
+
+.img-pizzas {
+  width: 90% !important;
+  border-radius: 20px;
+  border-bottom-style: solid;
+  border-width: 10px;
+  border-bottom-color: #f3ad2b;
+  border-right-style: solid;
+  border-right-color: #f3ad2b;
+}
+
+.img-section-menu-pastas {
+  width: 100%;
+  margin-left: 0vw;
+  border-radius: 20px;
+  border-bottom-style: solid;
+  border-bottom-color: #121930;
+  border-bottom-width: 5px;
+  border-right-style: solid;
+  border-right-color: #121930;
+  border-right-width: 5px;
 }
 
 .img-section-menu-opcionB {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.img-pastas-b {
   width: 100%;
   border-radius: 20px;
 }
@@ -464,9 +620,62 @@ body {
   font-size: 1.4rem;
 }
 
+.letter-blue {
+  color: #121930;
+}
+
+.letter-white {
+  color: white;
+}
+
+.letter-red {
+  color: #923619;
+}
+
 hr {
   margin-left: 3vw;
   margin-top: 8px;
+  border-color: black;
+}
+
+.hr-blue {
+  border-color: #121930;
+}
+
+.hr-cold {
+  border-color: #5d7ad6;
+}
+
+.hr-brown {
+  border-color: #9c642b;
+}
+
+.hr-coffee {
+  border-color: #dba878;
+}
+
+.hr-red {
+  border-color: #923619;
+}
+
+.hr-white {
+  border-color: white;
+}
+
+.hr-jugos {
+  border-color: #76b34e;
+}
+
+.hr-sodas {
+  border-color: #d65db2;
+}
+
+.hr-shots {
+  border-color: #d6c45d;
+}
+
+.hr-vino {
+  border-color: #b45dd6;
 }
 
 .detalle-menu {
@@ -623,6 +832,11 @@ ul {
   border-radius: 20px;
 }
 
+.img-lasagnas {
+  width: 30vw;
+  border-radius: 20px;
+}
+
 .ml-cero {
   margin-left: 0;
 }
@@ -739,6 +953,10 @@ ul {
 
 .margin-salad {
   margin: 20px 25px;
+}
+
+.p-extra {
+  padding-bottom: 40px;
 }
 
 /* Footer General */
@@ -940,6 +1158,11 @@ ul {
     width: 50vw;
   }
 
+  .img-lasagnas {
+    width: 97vw;
+    border: 13px solid #c0a767;
+  }
+
   .column768 {
     display: flex;
     flex-direction: column;
@@ -977,7 +1200,7 @@ ul {
 
   .vector-vino {
     width: 120px;
-    margin-left: 20px;
+    margin-left: 0;
   }
 
   .vector-uvas {
@@ -1004,6 +1227,7 @@ ul {
     flex-direction: column;
     margin-top: 0;
     margin-bottom: 0;
+    overflow-x: hidden;
   }
 
   .pastas {
@@ -1014,8 +1238,7 @@ ul {
   }
 
   .baguetas {
-    width: 96%;
-    margin-left: 3vw;
+    padding-left: 3vw;
   }
 
   .title-seccion-menu {
@@ -1033,6 +1256,7 @@ ul {
   }
 
   .container-img-pizza-a {
+    width: 100%;
     margin-top: 6vh;
     display: flex;
     justify-content: center;
@@ -1053,15 +1277,31 @@ ul {
   .img-section-menu-opcionA {
     width: 320px;
     margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-carnes {
+    width: 320px;
+    margin-left: auto;
   }
 
   .img-section-menu-pastas {
-    width: 320px;
+    width: 90vw;
     margin-left: auto;
   }
 
   .img-section-menu-opcionB {
     width: 320px;
+  }
+
+  .img-pastas-b {
+    width: 300px;
+    border-bottom-style: solid;
+    border-bottom-color: #121930;
+    border-bottom-width: 5px;
+    border-left-style: solid;
+    border-left-color: #121930;
+    border-left-width: 5px;
   }
 
   .container-detalle-menu {
@@ -1089,12 +1329,15 @@ ul {
   }
 
   .img-ravioles {
-    width: 38vw;
+    width: 55vw;
+    margin-left: -40px;
     border-radius: 20px;
+    border: 10px solid #000000c7;
   }
 
   .ravioles-sabores {
     width: 50vw;
+    margin-left: 0;
   }
 
   .ravioles-lista {
@@ -1251,9 +1494,5 @@ ul {
 
   .titulo-precio-adiciones {
     font-size: 1.2rem;
-  }
-
-  .mb-extra {
-    margin-bottom: 30px;
   }
 }
