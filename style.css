@@ -1131,6 +1131,9 @@ ul {
   .titulo-precio-comida {
     font-size: 1.4rem;
   }
+  .titulo-precio-comida-cremas {
+    font-size: 1.4rem;
+  }
 
   .titulo-precio-adiciones {
     font-size: 1.4rem;
@@ -1363,6 +1366,11 @@ ul {
   .m-extra {
     margin-top: 0;
   }
+
+  .ochenta-cinco {
+    width: 85%;
+  }
+
   .hide {
     display: none;
   }
