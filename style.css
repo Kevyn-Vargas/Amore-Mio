@@ -390,6 +390,12 @@ body {
   padding-bottom: 40px;
 }
 
+.ciabattas {
+  background-color: #9dd1c4;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
 .desayunos {
   width: 100%;
   height: max-content;
@@ -616,6 +622,10 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 1.4rem;
+}
+
+.opcion-ciabatta {
+  font-size: 1.2rem;
 }
 
 .letter-blue {
