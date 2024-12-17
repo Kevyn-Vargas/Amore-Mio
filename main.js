@@ -6,6 +6,10 @@ function toggleMenu() {
   sideMenu.classList.toggle('hidden');
 }
 
+function redirectToEvents() {
+  window.location.href = "/bodas/index.html";
+}
+
 // Cerrar el menú si se hace clic fuera de él
 window.addEventListener('click', (event) => {
   const sideMenu = document.getElementById('side-menu');

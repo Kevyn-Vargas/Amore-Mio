@@ -37,8 +37,8 @@
           </div>
           <div class="container-btnes-navbar">
             <div class="navbar-buttons">
-              <a href=""><button class="btn">Domicilios</button></a>
-              <a href=""><button class="btn">Reservaciones</button></a>
+              <a href=""><button class="btn hide">Domicilios</button></a>
+              <a href="./bodas/index.html"><button class="btn">Bodas & Eventos</button></a>
             </div>
           </div>
         </div>
@@ -112,16 +112,6 @@
                     src="./assets/pasta.svg"
                     alt="" /></span
                 >Pastas</a
-              >
-            </li>
-            <li>
-              <a onclick="toggleMenu()" href="#baguetas" class="menu-item"
-                ><span
-                  ><img
-                    class="icons-menu"
-                    src="./assets/bagueta.svg"
-                    alt="" /></span
-                >Baguetas</a
               >
             </li>
             <li>
@@ -231,11 +221,19 @@
     </header>
     <section class="intro">
       <h1 class="title-intro">
-        Healthy Eating <br />
-        is important <br />
-        part of <br />
-        lifestyle
+        Cuciniamo <br />
+        con tutto <br />
+        il cuore <br />
       </h1>
+    </section>
+    <section class="events-section" onclick="redirectToEvents()">
+      <div class="events-content">
+        <div class="events-text">
+          <h3>Organizamos tus Eventos y Bodas</h3>
+          <p>Deja en nuestras manos la planificación de tus momentos más especiales. ¡Nosotros nos encargamos de todo!</p>
+          <button class="events-btn">Descubre Más</button>
+        </div>
+      </div>
     </section>
     <section class="intro-menu-container">
       <div class="intro-menu">
@@ -264,6 +262,7 @@
     <main>
       <section class="bienvenida-al-menu">
         Saborea lo mejor de nuestra cocina con nuestro menú:
+        <span style="color: #969ea5;" class="descripcion-mini">*Nuestros precios incluyen impuesto al consumo.</span>
       </section>
       <section class="type-of-food">
         <!--Entradas-->
@@ -281,14 +280,14 @@
                   <p class="puntito">Champiñones Napolitanos</p>
                   <p>$20.000</p>
                 </li>
-                <p class="descripcion-comida">
-                  Carnes Maduras, Quesos Madurados, Berenjenas, Pimentón &
-                  Aceitunas
-                </p>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Antipasto Mixto</p>
                   <p>$38.000</p>
                 </li>
+                <p class="descripcion-comida">
+                  Carnes Maduras, Quesos Madurados, Berenjenas, Pimentón &
+                  Aceitunas
+                </p>
                 <li class="titulo-precio-comida">
                   <p class="puntito">Quiche Salmón</p>
                   <p>$14.000</p>
@@ -512,11 +511,11 @@
               </li>
               <li class="titulo-precio-adiciones">
                 <p class="">Adición de Quesos Maduros</p>
-                <p>$20.000</p>
+                <p>$6.500</p>
               </li>
               <li class="titulo-precio-adiciones">
                 <p class="">Ensalada Acompañamiento</p>
-                <p id="lasagnas">$20.000</p>
+                <p id="lasagnas">$6.000</p>
               </li>
               <li class="titulo-precio-adiciones">
                 <p class="">Cambio de Pasta</p>
@@ -628,10 +627,6 @@
                     <p class="puntito">Alfredo</p>
                     <p>$32.000</p>
                   </li>
-                  <p class="descripcion-comida">
-                    Variedad de Verduras, Salmón Salteado, Aceitunas, Parmesano
-                    & Espinaca.
-                  </p>
                   <li id="pastas" class="titulo-precio-comida">
                     <p class="puntito">Gratinados</p>
                     <p>$38.000</p>
@@ -767,39 +762,6 @@
             alt=""
             loading="lazy"
           />
-        </div>
-      </section>
-      <section id="baguetas" class="baguetas">
-        <!-- Baguetas -->
-        <div class="container-boceto">
-          <h1 class="title-seccion-menu hide-big-screen">Baguettas</h1>
-        </div>
-        <div>
-          <h1 class="title-seccion-menu hide">Baguettas</h1>
-          <hr class="hr-brown" />
-          <div class="detalle-menu-baguetas">
-            <!-- <div class="cincuenta"> En caso de utilizar foto en esta seccion -->
-            <ol class="number-counter">
-              <li class="titulo-precio-comida">
-                <p class="number">Prosciutto, Mozzarella, Albahaca, Pesto</p>
-                <p>$16.000</p>
-              </li>
-              <li class="titulo-precio-comida">
-                <p class="number">Champiñones Salteados, Quesos Maduros</p>
-                <p>$16.000</p>
-              </li>
-              <li class="titulo-precio-comida">
-                <p class="number">
-                  Tomate, Parmesano, Albahaca, Berenjenas, Pimentones Asados.
-                </p>
-                <p>$16.000</p>
-              </li>
-            </ol>
-            <!-- </div> -->
-            <!-- <div class="cincuenta">
-              <img class="img-desayuno" src="./assets/pasta.webp" alt="" />
-            </div> -->
-          </div>
         </div>
       </section>
       <section id="risottos" class="risottos">
@@ -940,9 +902,10 @@
               </li>
               <p class="descripcion-comida">Alcaparras, Aceitunas, Champiñon</p>
               <li class="titulo-precio-comida">
-                <p class="puntito">Lomo Rib Eye</p>
+                <p class="puntito">Rib Eye</p>
                 <p>$46.500</p>
               </li>
+              <p class="descripcion-comida">Filete Grueso de Carne, Sellado con Romero & Mantequilla de Anchoas</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">Ossobuco</p>
                 <p>$46.000</p>
@@ -973,6 +936,7 @@
                 <p class="puntito">Birra</p>
                 <p>$40.000</p>
               </li>
+              <p class="descripcion-comida">Champiñon, Tocineta, Crema</p>
               <li class="titulo-precio-comida">
                 <p class="puntito">A la Plancha</p>
                 <p>$40.000</p>
@@ -981,7 +945,6 @@
                 <p class="puntito">Gratinado</p>
                 <p>$40.000</p>
               </li>
-              <p class="descripcion-comida">Champiñon, Tocineta, Crema</p>
               <!-- <li class="titulo-precio-comida">
                 <p class="puntito">Al Horno</p>
                 <p>$40.000</p>
@@ -1630,7 +1593,7 @@
                   </li>
                   <li class="titulo-precio-comida">
                     <p class="puntito">Denominación Origen</p>
-                    <p>$110.000</p>
+                    <p><span class="descripcion-mini-2">Desde</span> $110.000</p>
                   </li>
                   <p class="descripcion-comida">
                     (Italiano - Francés - Español)
@@ -1708,7 +1671,7 @@
           <h4>Nuestros Horarios</h4>
           <p>Lunes: 10:00 AM - 8:00 PM</p>
           <p>Martes: 10:00 AM - 8:00 PM</p>
-          <p>Miercoles: 10:00 AM - 8:00 PM</p>
+          <p>Miercoles: Abierto en Temporada Alta</p>
           <p>Jueves: 10:00 AM - 8:00 PM</p>
           <p>Viernes: 10:00 AM - 9:00 PM</p>
           <p>Sábado: 10:00 AM - 9:00 PM</p>
