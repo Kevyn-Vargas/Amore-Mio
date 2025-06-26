@@ -1111,6 +1111,16 @@ ul {
   width: 30px;
 }
 
+.places p {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.places {
+  text-decoration: none;
+}
+
 .footer-button {
   padding: 10px 15px;
   background-color: #ff6b6b; /* Color cálido para destacar */
@@ -1473,12 +1483,13 @@ ul {
   }
 
   .postres-sabores {
-    width: 44vw;
+    width: auto;
     margin-left: 0;
   }
 
   .container-postres {
     justify-content: space-around;
+    flex-direction: column;
   }
 
   .postres-margin {
